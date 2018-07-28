@@ -20,6 +20,12 @@ export const errorFetchingPlayers = () => {
   }
 }
 
+export const changeTesting = () => {
+  return {
+    type: "CHANGE_TESTING"
+  }
+}
+
 // export const setVisibilityFilter = (filter) => {
 //   return {
 //     type: 'SET_VISIBILITY_FILTER',

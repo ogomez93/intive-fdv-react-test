@@ -5,11 +5,16 @@ const initialState = {
   players: [],
   nameFilter: '',
   ageFilter: '',
-  positionFilter: ''
+  positionFilter: '',
+  testing: true
 }
 
 const footballPlayers = (state = initialState, action) => {
   switch (action.type) {
+    case "CHANGE_TESTING":
+      return Object.assign({}, state, {
+        testing: !state.testing
+      });
     case t.FETCH:
       return ;
     case t.ERROR_FETCHING:

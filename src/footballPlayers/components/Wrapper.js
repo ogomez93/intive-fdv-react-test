@@ -1,17 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-// import 
+import { changeTesting } from '../actions'
 
-const Wrapper = ({ testing }) => (
-  <div>
+const Wrapper = ({ testing, onTestClick }) => (
+  <div onClick = {onTestClick}>
     {testing ? 'true' : 'false'}
   </div>
 );
 
 const mapStateToProps = (state) => {
   return {
-    testing: true
+    testing: state.footballPlayers.testing
   }
 }
 
-export default connect(mapStateToProps)(Wrapper)
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onTestClick: () => {
+      dispatch(changeTesting());
+    }
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Wrapper)
