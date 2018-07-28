@@ -11,7 +11,34 @@ export const setFootballPlayers = (players) => {
 export const errorFetchingPlayers = () => {
   return {
     type: t.ERROR_FETCHING,
-    fetching: false,
+    fetching: false
+  }
+}
+
+export const setNameFilter = (nameFilter) => {
+  return {
+    type: t.SET_NAME_FILTER,
+    nameFilter
+  }
+}
+
+export const setPositionFilter = (positionFilter) => {
+  return {
+    type: t.SET_POSITION_FILTER,
+    positionFilter
+  }
+}
+
+export const setAgeFilter = (ageFilter) => {
+  return {
+    type: t.SET_AGE_FILTER,
+    ageFilter
+  }
+}
+
+export const applyFilters = () => {
+  return {
+    type: t.APPLY_FILTERS
   }
 }
 
@@ -20,10 +47,3 @@ export const changeTesting = () => {
     type: "CHANGE_TESTING"
   }
 }
-
-// export const setVisibilityFilter = (filter) => {
-//   return {
-//     type: 'SET_VISIBILITY_FILTER',
-//     filter
-//   }
-// }

@@ -1,30 +1,31 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { changeTesting } from '../actions';
+// import { changeTesting } from '../actions';
 import Table from './Table';
+import FiltersWrapper from './FiltersWrapper';
 
-const FootballPlayersWrapper = ({ testing, onTestClick }) => (
-  <div onClick = {onTestClick}>
-    {testing ? 'true' : 'false'}
+const FootballPlayersWrapper = () => (
+  <div>
+    <FiltersWrapper />
     <Table />
   </div>
 );
 
-const mapStateToProps = (state) => {
-  return {
-    testing: state.footballPlayers.testing
-  }
-}
+// const mapStateToProps = (state) => {
+//   return {
+//     testing: state.footballPlayers.testing
+//   }
+// }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onTestClick: () => {
-      dispatch(changeTesting());
-    }
-  }
-}
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     onTestClick: () => {
+//       dispatch(changeTesting());
+//     }
+//   }
+// }
 
 export default connect(
-  mapStateToProps,
-  mapDispatchToProps
+  // mapStateToProps,
+  // mapDispatchToProps
 )(FootballPlayersWrapper);
