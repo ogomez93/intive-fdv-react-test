@@ -7,7 +7,7 @@ const PlayersList = ({ players }) => (
     {
       !players.length ? 
         <tr>
-          <td colspan='4'>No players</td>
+          <td colSpan='4'>No players</td>
         </tr>
       :
         players.map(player => <Player player={player} key={player.name} />)

@@ -2,24 +2,7 @@ import * as t from './actionTypes';
 
 const initialState = {
   fetching: true,
-  players: [
-    {
-      "contractUntil": "2022-06-30",
-      "dateOfBirth": "1993-05-13",
-      "jerseyNumber": 9,
-      "name": "Romelu Lukaku",
-      "nationality": "Belgium",
-      "position": "Centre-Forward"
-    },
-    {
-      "contractUntil": "2019-06-30",
-      "dateOfBirth": "1990-11-07",
-      "jerseyNumber": 1,
-      "name": "David de Gea",
-      "nationality": "Spain",
-      "position": "Keeper"
-    }
-  ],
+  players: [],
   nameFilter: '',
   ageFilter: '',
   positionFilter: '',
@@ -32,10 +15,15 @@ const footballPlayers = (state = initialState, action) => {
       return Object.assign({}, state, {
         testing: !state.testing
       });
-    case t.FETCH:
-      return ;
+    case t.SET_PLAYERS:
+      return Object.assign({}, state, {
+        players: action.players,
+        fetching: action.fetching
+      });
     case t.ERROR_FETCHING:
-      return ;
+      return Object.assign({}, state, {
+        fetching: action.fetching
+      });
     // case 'SET_VISIBILITY_FILTER':
     //   return action.filter;
     default:

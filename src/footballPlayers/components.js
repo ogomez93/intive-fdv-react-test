@@ -1,3 +1,3 @@
-import Wrapper from './components/Wrapper';
+import FootballPlayersWrapper from './components/FootballPlayersWrapper';
 
-export { Wrapper }
+export { FootballPlayersWrapper }

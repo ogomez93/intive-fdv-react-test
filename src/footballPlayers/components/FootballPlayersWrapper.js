@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { changeTesting } from '../actions';
 import Table from './Table';
 
-const Wrapper = ({ testing, onTestClick }) => (
+const FootballPlayersWrapper = ({ testing, onTestClick }) => (
   <div onClick = {onTestClick}>
     {testing ? 'true' : 'false'}
     <Table />
@@ -27,4 +27,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Wrapper);
+)(FootballPlayersWrapper);

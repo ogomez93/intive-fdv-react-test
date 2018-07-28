@@ -1,22 +1,17 @@
 import * as t from './actionTypes';
 
-const fetchPlayers = () => {
-  return fetch('https://football-players-b31f2.firebaseio.com/players.json?print=pretty').then(
-
-  )
-}
-
-export const fetchFootballPlayers = () => {
+export const setFootballPlayers = (players) => {
   return {
-    type: t.FETCH,
-    fetching: true,
-    players: fetchPlayers()
+    type: t.SET_PLAYERS,
+    fetching: false,
+    players: players
   }
 }
 
 export const errorFetchingPlayers = () => {
   return {
-    type: t.ERROR_FETCHING
+    type: t.ERROR_FETCHING,
+    fetching: false,
   }
 }
 
