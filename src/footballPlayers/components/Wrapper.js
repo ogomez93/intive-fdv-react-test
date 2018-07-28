@@ -1,10 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { changeTesting } from '../actions'
+import { changeTesting } from '../actions';
+import Table from './Table';
 
 const Wrapper = ({ testing, onTestClick }) => (
   <div onClick = {onTestClick}>
     {testing ? 'true' : 'false'}
+    <Table />
   </div>
 );
 
@@ -25,4 +27,4 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Wrapper)
+)(Wrapper);
