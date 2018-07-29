@@ -4,8 +4,8 @@ import moment from 'moment';
 export function calculateAge(dob) {
   let date = moment(dob, "YYYY-MM-DD").toDate();
   let today = new Date();
-  var timeDiff = Math.abs(today.getTime() - date.getTime());
-  var age = Math.ceil(timeDiff / (1000 * 3600 * 24 * 365));
+  let timeDiff = Math.abs(today.getTime() - date.getTime());
+  let age = Math.ceil(timeDiff / (1000 * 3600 * 24 * 365));
   return age;
 }
 
