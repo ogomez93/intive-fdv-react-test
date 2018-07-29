@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Table from './Table';
 import Filters from './Filters';
+import './css/loader.css';
 
 const FootballPlayersWrapper = ({ fetching }) => (
   <div>
@@ -9,7 +10,10 @@ const FootballPlayersWrapper = ({ fetching }) => (
     <Filters />
     {
       fetching ?
-        <div>Fetching players, please wait...</div>
+        <div className="text-center">
+          Fetching players, please wait...
+          <div className="mx-auto my-12 loader" />
+        </div>
       :
         <Table />
     }

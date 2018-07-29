@@ -13,6 +13,7 @@ const positions = POSITIONS.map(position =>
 
 const Filters = ({ nameFilterPreview, ageFilterPreview, positionFilterPreview, onNameChange, onPositionChange, onAgeChange, onSearchSubmit }) => {
   let nameInput, positionSelect, ageInput;
+
   return (
     <form className="my-4 text-xs sm:flex sm:justify-between" onSubmit={ onSearchSubmit }>
       <input
@@ -20,6 +21,7 @@ const Filters = ({ nameFilterPreview, ageFilterPreview, positionFilterPreview, o
         onChange={ () => onNameChange(nameInput.value) }
         ref={ node => nameInput = node }
         placeholder="Player Name" />
+
       <select
         className="border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4 bg-white"
         onChange={ () => onPositionChange(positionSelect.value) }
@@ -28,6 +30,7 @@ const Filters = ({ nameFilterPreview, ageFilterPreview, positionFilterPreview, o
         <option value="">Position</option>
         { positions }
       </select>
+
       <input
         className="border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4"
         type="number"
@@ -36,6 +39,7 @@ const Filters = ({ nameFilterPreview, ageFilterPreview, positionFilterPreview, o
         placeholder="Age"
         min="18"
         max="40" />
+
       <button
         className="border-2 border-black px-6 py-3 w-full sm:w-auto"
         type="submit">
@@ -46,19 +50,20 @@ const Filters = ({ nameFilterPreview, ageFilterPreview, positionFilterPreview, o
 };
 
 const mapStateToProps = (state) => {
+  const { nameFilterPreview, ageFilterPreview, positionFilterPreview } = state.footballPlayers;
   return {
-    nameFilterPreview: state.footballPlayers.nameFilterPreview,
-    ageFilterPreview: state.footballPlayers.ageFilterPreview,
-    positionFilterPreview: state.footballPlayers.positionFilterPreview
+    nameFilterPreview: nameFilterPreview,
+    ageFilterPreview: ageFilterPreview,
+    positionFilterPreview: positionFilterPreview
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onNameChange: (value) => dispatch(setNameFilterPreview(value)),
+    onNameChange:     (value) => dispatch(setNameFilterPreview(value)),
     onPositionChange: (value) => dispatch(setPositionFilterPreview(value)),
-    onAgeChange: (value) => dispatch(setAgeFilterPreview(value)),
-    onSearchSubmit: (event) => {
+    onAgeChange:      (value) => dispatch(setAgeFilterPreview(value)),
+    onSearchSubmit:   (event) => {
       event.preventDefault();
       dispatch(applyFilters());
     }
