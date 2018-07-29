@@ -15,24 +15,24 @@ export const errorFetchingPlayers = () => {
   }
 }
 
-export const setNameFilter = (nameFilter) => {
+export const setNameFilterPreview = (nameFilterPreview) => {
   return {
-    type: t.SET_NAME_FILTER,
-    nameFilter
+    type: t.SET_NAME_FILTER_PREVIEW,
+    nameFilterPreview
   }
 }
 
-export const setPositionFilter = (positionFilter) => {
+export const setPositionFilterPreview = (positionFilterPreview) => {
   return {
-    type: t.SET_POSITION_FILTER,
-    positionFilter
+    type: t.SET_POSITION_FILTER_PREVIEW,
+    positionFilterPreview
   }
 }
 
-export const setAgeFilter = (ageFilter) => {
+export const setAgeFilterPreview = (ageFilterPreview) => {
   return {
-    type: t.SET_AGE_FILTER,
-    ageFilter
+    type: t.SET_AGE_FILTER_PREVIEW,
+    ageFilterPreview
   }
 }
 

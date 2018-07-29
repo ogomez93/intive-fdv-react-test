@@ -1,23 +1,18 @@
 import * as t from './actionTypes';
-import _ from 'lodash';
 
 const initialState = {
   fetching: true,
   players: [],
-  visiblePlayers: [],
+  nameFilterPreview: '',
+  ageFilterPreview: '',
+  positionFilterPreview: '',
   nameFilter: '',
   ageFilter: '',
-  positionFilter: '',
-  testing: true
+  positionFilter: ''
 }
 
 const footballPlayers = (state = initialState, action) => {
   switch (action.type) {
-    case "CHANGE_TESTING":
-      return Object.assign({}, state, {
-        testing: !state.testing
-      });
-
     case t.SET_PLAYERS:
       return Object.assign({}, state, {
         players: action.players,
@@ -29,24 +24,26 @@ const footballPlayers = (state = initialState, action) => {
         fetching: action.fetching
       });
     
-    case t.SET_NAME_FILTER:
+    case t.SET_NAME_FILTER_PREVIEW:
       return Object.assign({}, state, {
-        nameFilter: action.nameFilter
+        nameFilterPreview: action.nameFilterPreview
       });
     
-    case t.SET_POSITION_FILTER:
+    case t.SET_POSITION_FILTER_PREVIEW:
       return Object.assign({}, state, {
-        positionFilter: action.positionFilter
+        positionFilterPreview: action.positionFilterPreview
       });
     
-    case t.SET_AGE_FILTER:
+    case t.SET_AGE_FILTER_PREVIEW:
       return Object.assign({}, state, {
-        ageFilter: action.ageFilter
+        ageFilterPreview: action.ageFilterPreview
       });
     
     case t.APPLY_FILTERS:
       return Object.assign({}, state, {
-        visiblePlayers: _.concat(state.visiblePlayers, { name: 'test 1' })
+        nameFilter: state.nameFilterPreview,
+        positionFilter: state.positionFilterPreview,
+        ageFilter: state.ageFilterPreview
       });
     
     default:
