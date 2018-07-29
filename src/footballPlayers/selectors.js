@@ -11,13 +11,19 @@ export const getVisiblePlayers = createSelector(
   (nameFilter, positionFilter, ageFilter, players) => {
     let filteredPlayers = players;
     if (nameFilter !== '') {
-      filteredPlayers = filteredPlayers.filter(p => p.name.toLowerCase().includes(nameFilter));
+      filteredPlayers = filteredPlayers.filter(p => 
+        p.name.toLowerCase().includes(nameFilter.toLowerCase().trim())
+      );
     }
     if (positionFilter !== '') {
-      filteredPlayers = filteredPlayers.filter(p => p.position.includes(positionFilter));
+      filteredPlayers = filteredPlayers.filter(p =>
+        p.position.includes(positionFilter)
+      );
     }
     if (ageFilter !== '') {
-      filteredPlayers = filteredPlayers.filter(p => calculateAge(p.dateOfBirth) === parseInt(ageFilter, 10));
+      filteredPlayers = filteredPlayers.filter(p =>
+        calculateAge(p.dateOfBirth) === parseInt(ageFilter, 10)
+      );
     }
     return filteredPlayers;
   }

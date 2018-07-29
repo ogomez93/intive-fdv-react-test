@@ -8,7 +8,7 @@ const VisiblePlayersList = ({ players }) => (
     {
       !players.length ? 
         <tr>
-          <td className="border-2 border-black" colSpan="4">No players match those filters</td>
+          <td className="border-2 border-black px-1 py-3 sm:py-6" colSpan="4">No players match those filters</td>
         </tr>
       :
         players.map(player => <Player player={player} key={player.name} />)
