@@ -15,28 +15,28 @@ const footballPlayers = (state = initialState, action) => {
   switch (action.type) {
     case t.SET_PLAYERS:
       return Object.assign({}, state, {
-        players: action.players,
-        fetching: action.fetching
+        players: action.payload.players,
+        fetching: action.payload.fetching
       });
     
     case t.ERROR_FETCHING:
       return Object.assign({}, state, {
-        fetching: action.fetching
+        fetching: action.payload.fetching
       });
     
     case t.SET_NAME_FILTER_PREVIEW:
       return Object.assign({}, state, {
-        nameFilterPreview: action.nameFilterPreview
+        nameFilterPreview: action.payload.nameFilterPreview
       });
     
     case t.SET_POSITION_FILTER_PREVIEW:
       return Object.assign({}, state, {
-        positionFilterPreview: action.positionFilterPreview
+        positionFilterPreview: action.payload.positionFilterPreview
       });
     
     case t.SET_AGE_FILTER_PREVIEW:
       return Object.assign({}, state, {
-        ageFilterPreview: action.ageFilterPreview
+        ageFilterPreview: action.payload.ageFilterPreview
       });
     
     case t.APPLY_FILTERS:
