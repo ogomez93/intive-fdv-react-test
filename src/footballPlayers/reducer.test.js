@@ -2,7 +2,7 @@ import configureStore from 'redux-mock-store';
 
 import * as t from './actionTypes';
 import footballPlayers from './reducer';
-import * as constants from './testConstants/actions.constants';
+import { players } from './testConstants/players.constants';
 
 const initialState = {
   fetching: true,
@@ -43,12 +43,12 @@ describe(`footballPlayers reducer: ${t.SET_PLAYERS}`, () => {
       type: t.SET_PLAYERS,
       payload: {
         fetching: false,
-        players: constants.players
+        players: players
       }
     };
     const expectedState = Object.assign({}, initialState, {
       fetching: false,
-      players: constants.players
+      players: players
     });
 
     expect(footballPlayers(undefined, action)).toEqual(expectedState);

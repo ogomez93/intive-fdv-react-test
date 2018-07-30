@@ -2,7 +2,7 @@ import configureStore from 'redux-mock-store';
 
 import * as t from './actionTypes';
 import * as actions from './actions';
-import * as constants from './testConstants/actions.constants';
+import { players } from './testConstants/players.constants';
 
 const mockStore = configureStore();
 const store = mockStore();
@@ -16,12 +16,12 @@ describe('action: setFootballPlayers', () => {
         type: t.SET_PLAYERS,
         payload: {
           fetching: false,
-          players: constants.players
+          players: players
         }
       }
     ];
 
-    store.dispatch(actions.setFootballPlayers(constants.players));
+    store.dispatch(actions.setFootballPlayers(players));
     expect(store.getActions()).toEqual(expectedActions);
   });
 });
