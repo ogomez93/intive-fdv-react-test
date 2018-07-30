@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## This project was developed using
 
 - Ubuntu 16.04
-- GIT >= v2.7.4
+- Git >= v2.7.4
 - Yarn >= v1.7.0
 - Node.JS >= v8.9.4
 

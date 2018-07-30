@@ -7,7 +7,7 @@ const VisiblePlayersList = ({ players }) => (
   <tbody>
     {
       !players.length ? 
-        <tr>
+        <tr id="noPlayersMatchFilters">
           <td className="border-2 border-black px-1 py-3 sm:py-6" colSpan="4">No players match those filters</td>
         </tr>
       :

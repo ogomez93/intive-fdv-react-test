@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 
 import Player, { calculateAge } from './Player';
-import { presentYear, eightteenYearsAgo, player } from './test/constants';
+import { presentYear, eightteenYearsAgo, player } from './testConstants/Player.constants';
 
 describe('Component: <Player />', () => {
   const component = renderer.create( <Player player={player} /> );
@@ -13,22 +13,22 @@ describe('Component: <Player />', () => {
   });
 
   test('component renders player name correctly', () => {
-    const nameTd = playerProps.find(p => p.props.name === 'name');
+    const nameTd = playerProps.find(p => p.props.label === 'Name');
     expect(nameTd.children[0]).toEqual('test name');
   });
 
   test('component renders player position correctly', () => {
-    const positionTd = playerProps.find(p => p.props.name === 'position');
+    const positionTd = playerProps.find(p => p.props.label === 'Position');
     expect(positionTd.children[0]).toEqual('test position');
   });
 
   test('component renders player nationality correctly', () => {
-    const nationalityTd = playerProps.find(p => p.props.name === 'nationality');
+    const nationalityTd = playerProps.find(p => p.props.label === 'Nationality');
     expect(nationalityTd.children[0]).toEqual('test nationality');
   });
 
   test('component renders player age correctly', () => {
-    const ageTd = playerProps.find(p => p.props.name === 'age');
+    const ageTd = playerProps.find(p => p.props.label === 'Age');
     expect(ageTd.children[0]).toEqual('18');
   });
 });

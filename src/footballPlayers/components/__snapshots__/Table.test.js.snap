@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Table /> renders the component 1`] = `
+<table
+  className="custom-table w-full text-center text-xs border"
+  id="playersTable"
+>
+  <thead>
+    <tr
+      className="text-white font-semibold"
+      label="labels"
+    >
+      <td
+        className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+        label="Player"
+      >
+        Player
+      </td>
+      <td
+        className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+        label="Position"
+      >
+        Position
+      </td>
+      <td
+        className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+        label="Team"
+      >
+        Team
+      </td>
+      <td
+        className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+        label="Age"
+      >
+        Age
+      </td>
+    </tr>
+  </thead>
+  <Connect(VisiblePlayersList) />
+</table>
+`;

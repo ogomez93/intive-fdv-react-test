@@ -1,15 +1,4 @@
-export const today = new Date;
-export const presentYear = today.getFullYear();
-export const eightteenYearsAgo = presentYear - 18;
-
-export const player = {
-  name: 'test name',
-  position: 'test position',
-  nationality: 'test nationality',
-  dateOfBirth: `${eightteenYearsAgo}-01-01`
-};
-
-export const initialStateFetchingTrue = {
+export const initialStateWithoutPlayers = {
   footballPlayers: {
     fetching: true,
     players: [],
@@ -22,7 +11,7 @@ export const initialStateFetchingTrue = {
   }
 };
 
-export const initialStateFetchingFalse = {
+export const initialStateWithTwoPlayers = {
   footballPlayers: {
     fetching: false,
     players: [

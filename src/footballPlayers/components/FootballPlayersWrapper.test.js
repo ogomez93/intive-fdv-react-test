@@ -5,7 +5,7 @@ import configureStore from 'redux-mock-store';
 import renderer from 'react-test-renderer';
 
 import FootballPlayersWrapper from './FootballPlayersWrapper';
-import { initialStateFetchingTrue, initialStateFetchingFalse } from './test/constants';
+import { initialStateFetchingTrue, initialStateFetchingFalse } from './testConstants/FootballPlayersWrapper.constants';
 
 const mockStore = configureStore();
 

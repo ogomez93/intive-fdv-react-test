@@ -4,25 +4,25 @@ exports[`Component: <Player /> renders the component 1`] = `
 <tr>
   <td
     className="border-2 border-black px-1 py-3 sm:py-6"
-    name="name"
+    label="Name"
   >
     test name
   </td>
   <td
     className="border-2 border-black px-1 py-3 sm:py-6"
-    name="position"
+    label="Position"
   >
     test position
   </td>
   <td
     className="border-2 border-black px-1 py-3 sm:py-6"
-    name="nationality"
+    label="Nationality"
   >
     test nationality
   </td>
   <td
     className="border-2 border-black px-1 py-3 sm:py-6"
-    name="age"
+    label="Age"
   >
     18
   </td>
