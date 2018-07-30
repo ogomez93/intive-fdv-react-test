@@ -2,7 +2,7 @@ import { twoPlayers } from './testPlayers.constants';
 
 export const initialState = {
   footballPlayers: {
-    fetching: false,
+    fetching: true,
     players: twoPlayers,
     nameFilterPreview: '',
     ageFilterPreview: '',

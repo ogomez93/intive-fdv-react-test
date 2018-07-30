@@ -19,7 +19,7 @@ describe('Component: <Player />', () => {
 
   test('component renders player position correctly', () => {
     const positionTd = playerProps.find(p => p.props.label === 'Position');
-    expect(positionTd.children[0]).toEqual('test position');
+    expect(positionTd.children[0]).toEqual('Attacking Midfield');
   });
 
   test('component renders player nationality correctly', () => {

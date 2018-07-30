@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Filters /> renders the component 1`] = `
+<form
+  className="my-4 text-xs sm:flex sm:justify-between"
+  onSubmit={[Function]}
+>
+  <input
+    className="border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4"
+    name="playerName"
+    onChange={[Function]}
+    placeholder="Player Name"
+  />
+  <select
+    className="border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4 bg-white"
+    name="playerPosition"
+    onChange={[Function]}
+    placeholder="Position"
+  >
+    <option
+      value=""
+    >
+      Position
+    </option>
+    <option
+      key="Attacking Midfield"
+      value="Attacking Midfield"
+    >
+      Attacking Midfield
+    </option>
+    <option
+      key="Central Midfield"
+      value="Central Midfield"
+    >
+      Central Midfield
+    </option>
+    <option
+      key="Centre-Back"
+      value="Centre-Back"
+    >
+      Centre-Back
+    </option>
+    <option
+      key="Centre-Forward"
+      value="Centre-Forward"
+    >
+      Centre-Forward
+    </option>
+    <option
+      key="Defensive Midfield"
+      value="Defensive Midfield"
+    >
+      Defensive Midfield
+    </option>
+    <option
+      key="Keeper"
+      value="Keeper"
+    >
+      Keeper
+    </option>
+    <option
+      key="Left Midfield"
+      value="Left Midfield"
+    >
+      Left Midfield
+    </option>
+    <option
+      key="Left Wing"
+      value="Left Wing"
+    >
+      Left Wing
+    </option>
+    <option
+      key="Left-Back"
+      value="Left-Back"
+    >
+      Left-Back
+    </option>
+    <option
+      key="Right-Back"
+      value="Right-Back"
+    >
+      Right-Back
+    </option>
+  </select>
+  <input
+    className="border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4"
+    max="40"
+    min="18"
+    name="playerAge"
+    onChange={[Function]}
+    placeholder="Age"
+    type="number"
+  />
+  <button
+    className="border-2 border-black px-6 py-3 w-full sm:w-auto"
+    type="submit"
+  >
+    Search
+  </button>
+</form>
+`;
