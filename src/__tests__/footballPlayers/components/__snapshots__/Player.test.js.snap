@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Player /> renders the component 1`] = `
+<tr>
+  <td
+    className="border-2 border-black px-1 py-3 sm:py-6"
+    name="name"
+  >
+    test name
+  </td>
+  <td
+    className="border-2 border-black px-1 py-3 sm:py-6"
+    name="position"
+  >
+    test position
+  </td>
+  <td
+    className="border-2 border-black px-1 py-3 sm:py-6"
+    name="nationality"
+  >
+    test nationality
+  </td>
+  <td
+    className="border-2 border-black px-1 py-3 sm:py-6"
+    name="age"
+  >
+    18
+  </td>
+</tr>
+`;

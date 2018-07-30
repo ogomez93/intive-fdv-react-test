@@ -17,12 +17,15 @@
     "tailwind:css": "tailwind build src/css/tailwind.src.css -c  tailwind.js -o src/css/tailwind.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
-    "default-test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --modulePaths=src",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "jest": "^23.4.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "react-test-renderer": "^16.4.1",
+    "redux-mock-store": "^1.5.3",
     "tailwindcss": "^0.6.4"
   }
 }
