@@ -10,7 +10,7 @@ const FootballPlayersWrapper = ({ fetching }) => (
     <Filters />
     {
       fetching ?
-        <div className="text-center">
+        <div id="fetchingPlayers" className="text-center">
           Fetching players, please wait...
           <div className="mx-auto my-12 loader" />
         </div>

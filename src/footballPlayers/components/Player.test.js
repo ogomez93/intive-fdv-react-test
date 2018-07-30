@@ -1,24 +1,11 @@
 import React from 'react';
-import { shallow } from 'enzyme';
-import configureStore from 'redux-mock-store';
 import renderer from 'react-test-renderer';
 
-import Player, { calculateAge } from '../../../footballPlayers/components/Player';
+import Player, { calculateAge } from './Player';
+import { presentYear, eightteenYearsAgo, player } from './test/constants';
 
-const today = new Date;
-const presentYear = today.getFullYear();
-const eightteenYearsAgo = presentYear - 18;
-
-const player = {
-  name: 'test name',
-  position: 'test position',
-  nationality: 'test nationality',
-  dateOfBirth: `${eightteenYearsAgo}-01-01`
-}
-
-describe('<Player />', () => {
+describe('Component: <Player />', () => {
   const component = renderer.create( <Player player={player} /> );
-
   const playerProps = component.toJSON().children;
   
   test('renders the component', () => {
@@ -46,7 +33,7 @@ describe('<Player />', () => {
   });
 });
 
-describe('function calculateAge(dateOfBirth)', () => {
+describe('Function: calculateAge(dateOfBirth)', () => {
   test('someone born this year is 0 years old', () => {
     expect(calculateAge(`${presentYear}-01-01`)).toEqual(0);
   });
