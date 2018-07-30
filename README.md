@@ -10,6 +10,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## To set up locally
 
 - Pull branch `master`
-- Run `yarn` in your terminal
-- Run `yarn start` in your terminal to launch the app
+- Run `yarn`
+- Run `yarn start` to launch the app
 - Run `yarn test` to test the app
