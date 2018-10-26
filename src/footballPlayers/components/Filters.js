@@ -5,7 +5,7 @@ import {
   setPositionFilterPreview,
   setAgeFilterPreview,
   applyFilters
-} from '../actions';
+} from '../actions/filters';
 import { POSITIONS } from '../constants';
 
 const positions = POSITIONS.map(position =>
@@ -14,7 +14,7 @@ const positions = POSITIONS.map(position =>
   </option>
 );
 
-const Filters = ({ nameFilterPreview, ageFilterPreview, positionFilterPreview, onNameChange, onPositionChange, onAgeChange, onSearchSubmit }) => {
+const Filters = ({ onNameChange, onPositionChange, onAgeChange, onSearchSubmit }) => {
   let nameInput, positionSelect, ageInput;
 
   return (

@@ -1,8 +1,8 @@
 import configureStore from 'redux-mock-store';
 
-import * as t from './actionTypes';
-import * as actions from './actions';
-import { players } from './testConstants/players.constants';
+import * as t from '../../actionTypes/filters';
+import * as actions from '.';
+import { players } from '../../testConstants/players.constants';
 
 const mockStore = configureStore();
 const store = mockStore();

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './css/tailwind.css';
-import footballPlayers from './footballPlayers';
+import '../css/tailwind.css';
+import footballPlayers from '../footballPlayers';
 
 const { FootballPlayersWrapper } = footballPlayers.components;
 

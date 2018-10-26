@@ -7,7 +7,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import thunk from 'redux-thunk';
 import rootReducer from './rootReducer';
-import { setFootballPlayers, errorFetchingPlayers } from './footballPlayers/actions';
+import { setFootballPlayers, errorFetchingPlayers } from './footballPlayers/actions/players';
 import { PLAYERS_API } from './footballPlayers/constants';
 
 export const store = createStore(
