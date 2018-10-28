@@ -9,12 +9,12 @@ export function calculateAge(dob) {
   return age;
 }
 
-const Player = ({ player }) => (
+const Player = ({ dateOfBirth, name, nationality, position }) => (
   <tr>
-    <td label="Name" className="border-2 border-black px-1 py-3 sm:py-6">{player.name}</td>
-    <td label="Position" className="border-2 border-black px-1 py-3 sm:py-6">{player.position}</td>
-    <td label="Nationality" className="border-2 border-black px-1 py-3 sm:py-6">{player.nationality}</td>
-    <td label="Age" className="border-2 border-black px-1 py-3 sm:py-6">{calculateAge(player.dateOfBirth)}</td>
+    <td label="Name" className="border-2 border-black px-1 py-3 sm:py-6">{name}</td>
+    <td label="Position" className="border-2 border-black px-1 py-3 sm:py-6">{position}</td>
+    <td label="Nationality" className="border-2 border-black px-1 py-3 sm:py-6">{nationality}</td>
+    <td label="Age" className="border-2 border-black px-1 py-3 sm:py-6">{calculateAge(dateOfBirth)}</td>
   </tr>
 );
 

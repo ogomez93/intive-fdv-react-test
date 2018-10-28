@@ -1,0 +1,16 @@
+{
+  "players": [
+    {
+      "dateOfBirth": "player 1 dateOfBirth",
+      "name": "player 1 name",
+      "nationality": "player 1 nationality",
+      "position": "player 1 position"
+    },
+    {
+      "dateOfBirth": "player 2 dateOfBirth",
+      "name": "player 2 name",
+      "nationality": "player 2 nationality",
+      "position": "player 2 position"
+    }
+  ]
+}
