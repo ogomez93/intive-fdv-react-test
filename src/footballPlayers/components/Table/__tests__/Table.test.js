@@ -1,27 +1,26 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import configureStore from 'redux-mock-store';
-import renderer from 'react-test-renderer';
 
-import Table from './Table';
-import { initialState } from './testConstants/Table.constants';
-
-const mockStore = configureStore();
-
-const store = mockStore(initialState);
+import Table from '../Table';
 
 describe('Component: <Table />', () => {
-  const wrapper = shallow(<Table store={store} />);
-  const component = wrapper.dive();
-  const componentToJson = toJson(component);
+  let wrapper;
+  
+  beforeAll(() => {
+    wrapper = shallow(<Table />);
+  });
 
-  test('renders the component', () => {
-    expect(componentToJson).toMatchSnapshot();
+  it('should render', () => {
+    expect(wrapper.isEmptyRender()).toBe(false);
+  });
+
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
   });
   
   test('renders a table', () => {
-    expect(componentToJson.type).toEqual('table');
+    expect(wrapper.type()).toEqual('table');
   });
 
   const thead = componentToJson.children.find((el) => el.type === 'thead');

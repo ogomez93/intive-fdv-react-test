@@ -1,7 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import VisiblePlayersList from './VisiblePlayersList';
-import './css/table.css';
+import VisiblePlayersList from '../VisiblePlayersList';
+import '../css/table.css';
 
 const Table = () => (
   <table id="playersTable" className="custom-table w-full text-center text-xs border">
@@ -17,4 +16,4 @@ const Table = () => (
   </table>
 );
 
-export default connect()(Table);
+export default Table;

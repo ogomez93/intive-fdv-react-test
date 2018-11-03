@@ -1,13 +1,5 @@
 import React from 'react';
-import moment from 'moment';
-
-export function calculateAge(dob) {
-  let date = moment(dob, "YYYY-MM-DD").toDate();
-  let today = new Date();
-  let timeDiff = Math.abs(today.getTime() - date.getTime());
-  let age = Math.ceil(timeDiff / (1000 * 3600 * 24 * 365)) - 1;
-  return age;
-}
+import calculateAge from './utils/calculateAge';
 
 const Player = ({ dateOfBirth, name, nationality, position }) => (
   <tr>

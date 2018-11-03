@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Player, { calculateAge } from './Player';
-import { presentYear, eightteenYearsAgo, player } from './testConstants/Player.constants';
+import Player, { calculateAge } from '../Player/Player';
+import { presentYear, eightteenYearsAgo, player } from '../testConstants/Player.constants';
 
 describe('Component: <Player />', () => {
   const component = renderer.create( <Player player={player} /> );

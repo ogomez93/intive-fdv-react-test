@@ -1,0 +1,395 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Table /> should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Table />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <thead>
+          <tr
+                    className="text-white font-semibold"
+                    label="labels"
+          >
+                    <td
+                              className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                              label="Player"
+                    >
+                              Player
+                    </td>
+                    <td
+                              className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                              label="Position"
+                    >
+                              Position
+                    </td>
+                    <td
+                              className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                              label="Team"
+                    >
+                              Team
+                    </td>
+                    <td
+                              className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                              label="Age"
+                    >
+                              Age
+                    </td>
+          </tr>
+</thead>,
+        <Connect(branch(VisiblePlayersList)) />,
+      ],
+      "className": "custom-table w-full text-center text-xs border",
+      "id": "playersTable",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <tr
+            className="text-white font-semibold"
+            label="labels"
+>
+            <td
+                        className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                        label="Player"
+            >
+                        Player
+            </td>
+            <td
+                        className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                        label="Position"
+            >
+                        Position
+            </td>
+            <td
+                        className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                        label="Team"
+            >
+                        Team
+            </td>
+            <td
+                        className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                        label="Age"
+            >
+                        Age
+            </td>
+</tr>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <td
+                className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                label="Player"
+>
+                Player
+</td>,
+              <td
+                className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                label="Position"
+>
+                Position
+</td>,
+              <td
+                className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                label="Team"
+>
+                Team
+</td>,
+              <td
+                className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                label="Age"
+>
+                Age
+</td>,
+            ],
+            "className": "text-white font-semibold",
+            "label": "labels",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Player",
+                "className": "w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark",
+                "label": "Player",
+              },
+              "ref": null,
+              "rendered": "Player",
+              "type": "td",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Position",
+                "className": "w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark",
+                "label": "Position",
+              },
+              "ref": null,
+              "rendered": "Position",
+              "type": "td",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Team",
+                "className": "w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark",
+                "label": "Team",
+              },
+              "ref": null,
+              "rendered": "Team",
+              "type": "td",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Age",
+                "className": "w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark",
+                "label": "Age",
+              },
+              "ref": null,
+              "rendered": "Age",
+              "type": "td",
+            },
+          ],
+          "type": "tr",
+        },
+        "type": "thead",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "table",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <thead>
+            <tr
+                        className="text-white font-semibold"
+                        label="labels"
+            >
+                        <td
+                                    className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                                    label="Player"
+                        >
+                                    Player
+                        </td>
+                        <td
+                                    className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                                    label="Position"
+                        >
+                                    Position
+                        </td>
+                        <td
+                                    className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                                    label="Team"
+                        >
+                                    Team
+                        </td>
+                        <td
+                                    className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                                    label="Age"
+                        >
+                                    Age
+                        </td>
+            </tr>
+</thead>,
+          <Connect(branch(VisiblePlayersList)) />,
+        ],
+        "className": "custom-table w-full text-center text-xs border",
+        "id": "playersTable",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <tr
+              className="text-white font-semibold"
+              label="labels"
+>
+              <td
+                            className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                            label="Player"
+              >
+                            Player
+              </td>
+              <td
+                            className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                            label="Position"
+              >
+                            Position
+              </td>
+              <td
+                            className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                            label="Team"
+              >
+                            Team
+              </td>
+              <td
+                            className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                            label="Age"
+              >
+                            Age
+              </td>
+</tr>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <td
+                  className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                  label="Player"
+>
+                  Player
+</td>,
+                <td
+                  className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                  label="Position"
+>
+                  Position
+</td>,
+                <td
+                  className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                  label="Team"
+>
+                  Team
+</td>,
+                <td
+                  className="w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark"
+                  label="Age"
+>
+                  Age
+</td>,
+              ],
+              "className": "text-white font-semibold",
+              "label": "labels",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Player",
+                  "className": "w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark",
+                  "label": "Player",
+                },
+                "ref": null,
+                "rendered": "Player",
+                "type": "td",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Position",
+                  "className": "w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark",
+                  "label": "Position",
+                },
+                "ref": null,
+                "rendered": "Position",
+                "type": "td",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Team",
+                  "className": "w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark",
+                  "label": "Team",
+                },
+                "ref": null,
+                "rendered": "Team",
+                "type": "td",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Age",
+                  "className": "w-1/4 border-2 border-black px-1 py-3 sm:py-6 bg-grey-dark",
+                  "label": "Age",
+                },
+                "ref": null,
+                "rendered": "Age",
+                "type": "td",
+              },
+            ],
+            "type": "tr",
+          },
+          "type": "thead",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "table",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

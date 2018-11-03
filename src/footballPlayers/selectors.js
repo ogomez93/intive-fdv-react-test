@@ -1,5 +1,5 @@
 import { createSelector } from 'reselect';
-import { calculateAge } from './components/Player';
+import calculateAge from './components/Player/utils/calculateAge';
 
 const getNameFilter = (state) => state.footballPlayers.nameFilter;
 const getPositionFilter = (state) => state.footballPlayers.positionFilter;
