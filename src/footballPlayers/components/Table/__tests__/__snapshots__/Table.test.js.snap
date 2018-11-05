@@ -49,7 +49,7 @@ ShallowWrapper {
                     </td>
           </tr>
 </thead>,
-        <Connect(branch(VisiblePlayersList)) />,
+        <VisiblePlayersList />,
       ],
       "className": "custom-table w-full text-center text-xs border",
       "id": "playersTable",
@@ -188,11 +188,11 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "host",
         "props": Object {},
         "ref": null,
         "rendered": null,
-        "type": [Function],
+        "type": "VisiblePlayersList",
       },
     ],
     "type": "table",
@@ -235,7 +235,7 @@ ShallowWrapper {
                         </td>
             </tr>
 </thead>,
-          <Connect(branch(VisiblePlayersList)) />,
+          <VisiblePlayersList />,
         ],
         "className": "custom-table w-full text-center text-xs border",
         "id": "playersTable",
@@ -374,11 +374,11 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "host",
           "props": Object {},
           "ref": null,
           "rendered": null,
-          "type": [Function],
+          "type": "VisiblePlayersList",
         },
       ],
       "type": "table",

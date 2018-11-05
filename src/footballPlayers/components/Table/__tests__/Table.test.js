@@ -1,8 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import toJson from 'enzyme-to-json';
 
 import Table from '../Table';
+
+jest.mock('../../VisiblePlayersList', () => 'VisiblePlayersList');
 
 describe('Component: <Table />', () => {
   let wrapper;
@@ -19,35 +20,61 @@ describe('Component: <Table />', () => {
     expect(wrapper).toMatchSnapshot();
   });
   
-  test('renders a table', () => {
+  it('should render a table', () => {
     expect(wrapper.type()).toEqual('table');
   });
 
-  const thead = componentToJson.children.find((el) => el.type === 'thead');
-  const tr = thead.children[0];
+  describe('Labels', () => {
+    describe('Player name', () => {
+      let playerLabel;
 
-  test('renders the Player table header', () => {
-    const playerTd = tr.children.find((el) => el.props.label === 'Player');
-    expect(playerTd.children[0]).toEqual('Player');
+      beforeAll(() => {
+        playerLabel = wrapper.find('[label="Player"]');
+      });
+
+      it('should render the Player name label', () => {
+        expect(playerLabel.text()).toEqual('Player');
+      });
+    });
+
+    describe('Position', () => {
+      let positionLabel;
+
+      beforeAll(() => {
+        positionLabel = wrapper.find('[label="Position"]');
+      });
+
+      it('should render the Position label', () => {
+        expect(positionLabel.text()).toEqual('Position');
+      });
+    });
+
+    describe('Team', () => {
+      let positionLabel;
+
+      beforeAll(() => {
+        positionLabel = wrapper.find('[label="Team"]');
+      });
+
+      it('should render the Team label', () => {
+        expect(positionLabel.text()).toEqual('Team');
+      });
+    });
+
+    describe('Age', () => {
+      let positionLabel;
+
+      beforeAll(() => {
+        positionLabel = wrapper.find('[label="Age"]');
+      });
+
+      it('should render the Age label', () => {
+        expect(positionLabel.text()).toEqual('Age');
+      });
+    });
   });
 
-  test('renders the Position table header', () => {
-    const positionTd = tr.children.find((el) => el.props.label === 'Position');
-    expect(positionTd.children[0]).toEqual('Position');
-  });
-
-  test('renders the Team table header', () => {
-    const teamTd = tr.children.find((el) => el.props.label === 'Team');
-    expect(teamTd.children[0]).toEqual('Team');
-  });
-
-  test('renders the Age table header', () => {
-    const ageTd = tr.children.find((el) => el.props.label === 'Age');
-    expect(ageTd.children[0]).toEqual('Age');
-  });
-
-  test('renders the VisiblePlayersList component', () => {
-    const visiblePlayersList = componentToJson.children.find((el) => el.type === 'Connect(VisiblePlayersList');
-    expect(visiblePlayersList).not.toBeNull();
+  it('should render the VisiblePlayersList component', () => {
+    expect(wrapper.find('VisiblePlayersList').isEmptyRender()).toEqual(false);
   });
 });
