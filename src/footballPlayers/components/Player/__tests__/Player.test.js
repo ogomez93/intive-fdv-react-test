@@ -1,44 +1,69 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 
-import Player, { calculateAge } from '../Player/Player';
-import { presentYear, eightteenYearsAgo, player } from '../testConstants/Player.constants';
+import Player from '../Player';
+import props from './fixtures/playerProps';
+
+jest.mock('../utils/calculateAge', () => jest.fn(dob => 'mocked age'));
 
 describe('Component: <Player />', () => {
-  const component = renderer.create( <Player player={player} /> );
-  const playerProps = component.toJSON().children;
+  let wrapper;
+
+  beforeAll(() => {
+    wrapper = shallow(<Player {...props} />);
+  });
   
-  test('renders the component', () => {
-    expect(component.toJSON()).toMatchSnapshot();
+  it('should render', () => {
+    expect(wrapper).toMatchSnapshot();
   });
 
-  test('component renders player name correctly', () => {
-    const nameTd = playerProps.find(p => p.props.label === 'Name');
-    expect(nameTd.children[0]).toEqual('test name');
-  });
+  describe('Player props', () => {
+    describe('Name', () => {
+      let nameTd;
+      
+      beforeAll(() => {
+        nameTd = wrapper.find('[label="Name"]');
+      });
 
-  test('component renders player position correctly', () => {
-    const positionTd = playerProps.find(p => p.props.label === 'Position');
-    expect(positionTd.children[0]).toEqual('Attacking Midfield');
-  });
+      it('should contain the mocked name', () => {
+        expect(nameTd.text()).toEqual('mocked name');
+      });
+    });
 
-  test('component renders player nationality correctly', () => {
-    const nationalityTd = playerProps.find(p => p.props.label === 'Nationality');
-    expect(nationalityTd.children[0]).toEqual('test nationality');
-  });
+    describe('Position', () => {
+      let positionTd;
+      
+      beforeAll(() => {
+        positionTd = wrapper.find('[label="Position"]');
+      });
 
-  test('component renders player age correctly', () => {
-    const ageTd = playerProps.find(p => p.props.label === 'Age');
-    expect(ageTd.children[0]).toEqual('18');
-  });
-});
+      it('should contain the mocked position', () => {
+        expect(positionTd.text()).toEqual('mocked position');
+      });
+    });
 
-describe('Function: calculateAge(dateOfBirth)', () => {
-  test('someone born this year is 0 years old', () => {
-    expect(calculateAge(`${presentYear}-01-01`)).toEqual(0);
-  });
+    describe('Nationality', () => {
+      let nationalityTd;
+      
+      beforeAll(() => {
+        nationalityTd = wrapper.find('[label="Nationality"]');
+      });
 
-  test('someone born 18 years ago is 18 years old', () => {
-    expect(calculateAge(`${eightteenYearsAgo}-01-01`)).toEqual(18);
+      it('should contain the mocked nationality', () => {
+        expect(nationalityTd.text()).toEqual('mocked nationality');
+      });
+    });
+
+    describe('Age', () => {
+      let ageTd;
+      
+      beforeAll(() => {
+        ageTd = wrapper.find('[label="Age"]');
+      });
+
+      it('should contain the mocked age', () => {
+        expect(ageTd.text()).toEqual('mocked age');
+      });
+    });
   });
 });

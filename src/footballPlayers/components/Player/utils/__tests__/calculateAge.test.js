@@ -25,7 +25,7 @@ describe('calculateAge', () => {
     });
   });
 
-  describe('for someone born on January 1st 22 years ago', () => {
+  describe('for someone born on January 1st twentytwo years ago', () => {
     beforeAll(() => {
       dateOfBirth = `${presentYear - 22}-01-01`;
     });

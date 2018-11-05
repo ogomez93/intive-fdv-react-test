@@ -1,24 +1,208 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component: <Player /> renders the component 1`] = `
-<tr>
-  <td
-    className="border-2 border-black px-1 py-3 sm:py-6"
-    label="Name"
-  />
-  <td
-    className="border-2 border-black px-1 py-3 sm:py-6"
-    label="Position"
-  />
-  <td
-    className="border-2 border-black px-1 py-3 sm:py-6"
-    label="Nationality"
-  />
-  <td
-    className="border-2 border-black px-1 py-3 sm:py-6"
-    label="Age"
-  >
-    NaN
-  </td>
-</tr>
+exports[`Component: <Player /> should render 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Player
+    dateOfBirth="mocked date of birth"
+    name="mocked name"
+    nationality="mocked nationality"
+    position="mocked position"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <td
+          className="border-2 border-black px-1 py-3 sm:py-6"
+          label="Name"
+>
+          mocked name
+</td>,
+        <td
+          className="border-2 border-black px-1 py-3 sm:py-6"
+          label="Position"
+>
+          mocked position
+</td>,
+        <td
+          className="border-2 border-black px-1 py-3 sm:py-6"
+          label="Nationality"
+>
+          mocked nationality
+</td>,
+        <td
+          className="border-2 border-black px-1 py-3 sm:py-6"
+          label="Age"
+>
+          mocked age
+</td>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "mocked name",
+          "className": "border-2 border-black px-1 py-3 sm:py-6",
+          "label": "Name",
+        },
+        "ref": null,
+        "rendered": "mocked name",
+        "type": "td",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "mocked position",
+          "className": "border-2 border-black px-1 py-3 sm:py-6",
+          "label": "Position",
+        },
+        "ref": null,
+        "rendered": "mocked position",
+        "type": "td",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "mocked nationality",
+          "className": "border-2 border-black px-1 py-3 sm:py-6",
+          "label": "Nationality",
+        },
+        "ref": null,
+        "rendered": "mocked nationality",
+        "type": "td",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "mocked age",
+          "className": "border-2 border-black px-1 py-3 sm:py-6",
+          "label": "Age",
+        },
+        "ref": null,
+        "rendered": "mocked age",
+        "type": "td",
+      },
+    ],
+    "type": "tr",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <td
+            className="border-2 border-black px-1 py-3 sm:py-6"
+            label="Name"
+>
+            mocked name
+</td>,
+          <td
+            className="border-2 border-black px-1 py-3 sm:py-6"
+            label="Position"
+>
+            mocked position
+</td>,
+          <td
+            className="border-2 border-black px-1 py-3 sm:py-6"
+            label="Nationality"
+>
+            mocked nationality
+</td>,
+          <td
+            className="border-2 border-black px-1 py-3 sm:py-6"
+            label="Age"
+>
+            mocked age
+</td>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "mocked name",
+            "className": "border-2 border-black px-1 py-3 sm:py-6",
+            "label": "Name",
+          },
+          "ref": null,
+          "rendered": "mocked name",
+          "type": "td",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "mocked position",
+            "className": "border-2 border-black px-1 py-3 sm:py-6",
+            "label": "Position",
+          },
+          "ref": null,
+          "rendered": "mocked position",
+          "type": "td",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "mocked nationality",
+            "className": "border-2 border-black px-1 py-3 sm:py-6",
+            "label": "Nationality",
+          },
+          "ref": null,
+          "rendered": "mocked nationality",
+          "type": "td",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "mocked age",
+            "className": "border-2 border-black px-1 py-3 sm:py-6",
+            "label": "Age",
+          },
+          "ref": null,
+          "rendered": "mocked age",
+          "type": "td",
+        },
+      ],
+      "type": "tr",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
 `;

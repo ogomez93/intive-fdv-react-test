@@ -1,1 +1,1 @@
-export { default as default } from './Player';
+export { default } from './Player';
