@@ -1,114 +1,51 @@
-import configureStore from 'redux-mock-store';
+import { errorFetchingPlayers, setFootballPlayers } from './index';
 
-import * as t from '../../actionTypes/filters';
-import * as actions from '.';
-import { players } from '../../testConstants/players.constants';
+jest.mock('../../actionTypes', () => ({
+  ERROR_FETCHING: 'ERROR_FETCHING',
+  SET_PLAYERS: 'SET_PLAYERS'
+}));
 
-const mockStore = configureStore();
-const store = mockStore();
-
-describe('action: setFootballPlayers', () => {
-  beforeEach(() => store.clearActions());
-
-  test('Dispatches the correct action and payload', () => {
-    const expectedActions = [
-      {
-        type: t.SET_PLAYERS,
-        payload: {
-          fetching: false,
-          players: players
+describe('Actions > Players', () => {
+  describe('errorFetchingPlayers', () => {
+    it('should return the proper action', () => {
+      expect(
+        errorFetchingPlayers()
+      ).toEqual(
+        {
+          type: 'ERROR_FETCHING',
+          payload: {
+            fetching: false
+          }
         }
-      }
-    ];
-
-    store.dispatch(actions.setFootballPlayers(players));
-    expect(store.getActions()).toEqual(expectedActions);
+      );
+    });
   });
-});
 
-describe('action: errorFetchingPlayers', () => {
-  beforeEach(() => store.clearActions());
+  describe('setFootballPlayers', () => {
+    let players;
 
-  test('Dispatches the correct action and payload', () => {
-    const expectedActions = [
-      {
-        type: t.ERROR_FETCHING,
-        payload: {
-          fetching: false
+    beforeAll(() => {
+      players = [
+        { name: 'player 1' },
+        { name: 'player 2' }
+      ]
+    });
+
+    it('should return the proper action', () => {
+      expect(
+        setFootballPlayers(players)
+      ).toEqual(
+        {
+          type: 'SET_PLAYERS',
+          payload: {
+            fetching: false,
+            players: [
+              { name: 'player 1' },
+              { name: 'player 2' }
+            ]
+          }
         }
-      }
-    ];
-
-    store.dispatch(actions.errorFetchingPlayers());
-    expect(store.getActions()).toEqual(expectedActions);
-  });
-});
-
-describe('action: setNameFilterPreview', () => {
-  beforeEach(() => store.clearActions());
-
-  test('Dispatches the correct action and payload', () => {
-    const expectedActions = [
-      {
-        type: t.SET_NAME_FILTER_PREVIEW,
-        payload: {
-          nameFilterPreview: 'test name filter'
-        }
-      }
-    ];
-
-    store.dispatch(actions.setNameFilterPreview('test name filter'));
-    expect(store.getActions()).toEqual(expectedActions);
-  });
-});
-
-describe('action: setPositionFilterPreview', () => {
-  beforeEach(() => store.clearActions());
-
-  test('Dispatches the correct action and payload', () => {
-    const expectedActions = [
-      {
-        type: t.SET_POSITION_FILTER_PREVIEW,
-        payload: {
-          positionFilterPreview: 'test position filter'
-        }
-      }
-    ];
-
-    store.dispatch(actions.setPositionFilterPreview('test position filter'));
-    expect(store.getActions()).toEqual(expectedActions);
-  });
-});
-
-describe('action: setAgeFilterPreview', () => {
-  beforeEach(() => store.clearActions());
-
-  test('Dispatches the correct action and payload', () => {
-    const expectedActions = [
-      {
-        type: t.SET_AGE_FILTER_PREVIEW,
-        payload: {
-          ageFilterPreview: 'test age filter'
-        }
-      }
-    ];
-
-    store.dispatch(actions.setAgeFilterPreview('test age filter'));
-    expect(store.getActions()).toEqual(expectedActions);
-  });
-});
-
-describe('action: applyFilters', () => {
-  beforeEach(() => store.clearActions());
-
-  test('Dispatches the correct action and payload', () => {
-    const expectedActions = [
-      {
-        type: t.APPLY_FILTERS
-      }
-    ];
-
-    store.dispatch(actions.applyFilters());
-    expect(store.getActions()).toEqual(expectedActions);
+      );
+    });
   });
 });

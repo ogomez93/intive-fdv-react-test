@@ -1,8 +1,5 @@
 import {
-  applyFilters,
-  setAgeFilterPreview,
-  setNameFilterPreview,
-  setPositionFilterPreview
+  applyFilters
 } from './filters';
 
 import {
@@ -13,8 +10,5 @@ import {
 export default {
   applyFilters,
   errorFetchingPlayers,
-  setAgeFilterPreview,
-  setFootballPlayers,
-  setNameFilterPreview,
-  setPositionFilterPreview
+  setFootballPlayers
 };

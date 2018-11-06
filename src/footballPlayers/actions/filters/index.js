@@ -1,39 +1,10 @@
-import {
-  APPLY_FILTERS,
-  SET_AGE_FILTER_PREVIEW,
-  SET_NAME_FILTER_PREVIEW,
-  SET_POSITION_FILTER_PREVIEW
-} from '../../actionTypes/filters';
+import { APPLY_FILTERS } from '../../actionTypes';
 
-export const applyFilters = () => {
-  return {
-    type: APPLY_FILTERS
-  };
-};
-
-export const setAgeFilterPreview = (ageFilterPreview) => {
-  return {
-    type: SET_AGE_FILTER_PREVIEW,
-    payload: {
-      ageFilterPreview
-    }
-  };
-};
-
-export const setNameFilterPreview = (nameFilterPreview) => {
-  return {
-    type: SET_NAME_FILTER_PREVIEW,
-    payload: {
-      nameFilterPreview
-    }
-  };
-};
-
-export const setPositionFilterPreview = (positionFilterPreview) => {
-  return {
-    type: SET_POSITION_FILTER_PREVIEW,
-    payload: {
-      positionFilterPreview
-    }
-  };
-};
+export const applyFilters = ({ age, name, position }) => ({
+  type: APPLY_FILTERS,
+  payload: {
+    ageFilter: age,
+    nameFilter: name,
+    positionFilter: position
+  }
+});

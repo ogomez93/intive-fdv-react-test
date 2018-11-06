@@ -1,3 +1,5 @@
+// TODO: REFACTOR
+
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
@@ -5,7 +7,7 @@ import configureStore from 'redux-mock-store';
 import renderer from 'react-test-renderer';
 
 import Filters from './Filters';
-import { initialState } from './testConstants/Filters.constants';
+import { initialState } from '../../testConstants/Filters.constants';
 
 const mockStore = configureStore();
 

@@ -1,3 +1,5 @@
+// REFACTOR
+
 import configureStore from 'redux-mock-store';
 
 import * as t from './actionTypes';
@@ -7,9 +9,6 @@ import { players } from './testConstants/players.constants';
 const initialState = {
   fetching: true,
   players: [],
-  nameFilterPreview: '',
-  ageFilterPreview: '',
-  positionFilterPreview: '',
   nameFilter: '',
   ageFilter: '',
   positionFilter: ''

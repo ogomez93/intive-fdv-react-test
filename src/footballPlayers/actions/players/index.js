@@ -1,24 +1,16 @@
-import {
-  ERROR_FETCHING,
-  SET_PLAYERS
-} from '../../actionTypes/players';
+import { ERROR_FETCHING, SET_PLAYERS } from '../../actionTypes';
 
-export const errorFetchingPlayers = () => {
-  return {
-    type: ERROR_FETCHING,
-    payload: {
-      fetching: false
-    }
-  };
-};
+export const errorFetchingPlayers = () => ({
+  type: ERROR_FETCHING,
+  payload: {
+    fetching: false
+  }
+});
 
-export const setFootballPlayers = (players) => {
-  return {
-    type: SET_PLAYERS,
-    payload: {
-      fetching: false,
-      players: players
-    }
-  };
-};
-
+export const setFootballPlayers = players => ({
+  type: SET_PLAYERS,
+  payload: {
+    fetching: false,
+    players
+  }
+});
