@@ -1,0 +1,740 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: <Filters /> should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Filters
+    age={21}
+    name="Test name"
+    onAgeChange={[Function]}
+    onNameChange={[Function]}
+    onPositionChange={[Function]}
+    onSubmit={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <input
+          className="border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4"
+          name="playerName"
+          onChange={[Function]}
+          placeholder="Player Name"
+          type="text"
+          value="Test name"
+/>,
+        <select
+          className="border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4 bg-white"
+          name="playerPosition"
+          onChange={[Function]}
+          placeholder="Position"
+>
+          <option
+                    value=""
+          >
+                    Position
+          </option>
+          <option
+                    value="Attacking Midfield"
+          >
+                    Attacking Midfield
+          </option>
+          <option
+                    value="Central Midfield"
+          >
+                    Central Midfield
+          </option>
+          <option
+                    value="Centre-Back"
+          >
+                    Centre-Back
+          </option>
+          <option
+                    value="Centre-Forward"
+          >
+                    Centre-Forward
+          </option>
+          <option
+                    value="Defensive Midfield"
+          >
+                    Defensive Midfield
+          </option>
+          <option
+                    value="Keeper"
+          >
+                    Keeper
+          </option>
+          <option
+                    value="Left Midfield"
+          >
+                    Left Midfield
+          </option>
+          <option
+                    value="Left Wing"
+          >
+                    Left Wing
+          </option>
+          <option
+                    value="Left-Back"
+          >
+                    Left-Back
+          </option>
+          <option
+                    value="Right-Back"
+          >
+                    Right-Back
+          </option>
+</select>,
+        <input
+          className="border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4"
+          max="40"
+          min="18"
+          name="playerAge"
+          onChange={[Function]}
+          placeholder="Age"
+          type="number"
+          value={21}
+/>,
+        <button
+          className="border-2 border-black px-6 py-3 w-full sm:w-auto"
+          type="submit"
+>
+          Search
+</button>,
+      ],
+      "className": "my-4 text-xs sm:flex sm:justify-between",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4",
+          "name": "playerName",
+          "onChange": [Function],
+          "placeholder": "Player Name",
+          "type": "text",
+          "value": "Test name",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              value=""
+>
+              Position
+</option>,
+            Array [
+              <option
+                value="Attacking Midfield"
+>
+                Attacking Midfield
+</option>,
+              <option
+                value="Central Midfield"
+>
+                Central Midfield
+</option>,
+              <option
+                value="Centre-Back"
+>
+                Centre-Back
+</option>,
+              <option
+                value="Centre-Forward"
+>
+                Centre-Forward
+</option>,
+              <option
+                value="Defensive Midfield"
+>
+                Defensive Midfield
+</option>,
+              <option
+                value="Keeper"
+>
+                Keeper
+</option>,
+              <option
+                value="Left Midfield"
+>
+                Left Midfield
+</option>,
+              <option
+                value="Left Wing"
+>
+                Left Wing
+</option>,
+              <option
+                value="Left-Back"
+>
+                Left-Back
+</option>,
+              <option
+                value="Right-Back"
+>
+                Right-Back
+</option>,
+            ],
+          ],
+          "className": "border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4 bg-white",
+          "name": "playerPosition",
+          "onChange": [Function],
+          "placeholder": "Position",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Position",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": "Position",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "Attacking Midfield",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Attacking Midfield",
+              "value": "Attacking Midfield",
+            },
+            "ref": null,
+            "rendered": "Attacking Midfield",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "Central Midfield",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Central Midfield",
+              "value": "Central Midfield",
+            },
+            "ref": null,
+            "rendered": "Central Midfield",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "Centre-Back",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Centre-Back",
+              "value": "Centre-Back",
+            },
+            "ref": null,
+            "rendered": "Centre-Back",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "Centre-Forward",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Centre-Forward",
+              "value": "Centre-Forward",
+            },
+            "ref": null,
+            "rendered": "Centre-Forward",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "Defensive Midfield",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Defensive Midfield",
+              "value": "Defensive Midfield",
+            },
+            "ref": null,
+            "rendered": "Defensive Midfield",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "Keeper",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Keeper",
+              "value": "Keeper",
+            },
+            "ref": null,
+            "rendered": "Keeper",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "Left Midfield",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Left Midfield",
+              "value": "Left Midfield",
+            },
+            "ref": null,
+            "rendered": "Left Midfield",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "Left Wing",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Left Wing",
+              "value": "Left Wing",
+            },
+            "ref": null,
+            "rendered": "Left Wing",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "Left-Back",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Left-Back",
+              "value": "Left-Back",
+            },
+            "ref": null,
+            "rendered": "Left-Back",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "Right-Back",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Right-Back",
+              "value": "Right-Back",
+            },
+            "ref": null,
+            "rendered": "Right-Back",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4",
+          "max": "40",
+          "min": "18",
+          "name": "playerAge",
+          "onChange": [Function],
+          "placeholder": "Age",
+          "type": "number",
+          "value": 21,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Search",
+          "className": "border-2 border-black px-6 py-3 w-full sm:w-auto",
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": "Search",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <input
+            className="border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4"
+            name="playerName"
+            onChange={[Function]}
+            placeholder="Player Name"
+            type="text"
+            value="Test name"
+/>,
+          <select
+            className="border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4 bg-white"
+            name="playerPosition"
+            onChange={[Function]}
+            placeholder="Position"
+>
+            <option
+                        value=""
+            >
+                        Position
+            </option>
+            <option
+                        value="Attacking Midfield"
+            >
+                        Attacking Midfield
+            </option>
+            <option
+                        value="Central Midfield"
+            >
+                        Central Midfield
+            </option>
+            <option
+                        value="Centre-Back"
+            >
+                        Centre-Back
+            </option>
+            <option
+                        value="Centre-Forward"
+            >
+                        Centre-Forward
+            </option>
+            <option
+                        value="Defensive Midfield"
+            >
+                        Defensive Midfield
+            </option>
+            <option
+                        value="Keeper"
+            >
+                        Keeper
+            </option>
+            <option
+                        value="Left Midfield"
+            >
+                        Left Midfield
+            </option>
+            <option
+                        value="Left Wing"
+            >
+                        Left Wing
+            </option>
+            <option
+                        value="Left-Back"
+            >
+                        Left-Back
+            </option>
+            <option
+                        value="Right-Back"
+            >
+                        Right-Back
+            </option>
+</select>,
+          <input
+            className="border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4"
+            max="40"
+            min="18"
+            name="playerAge"
+            onChange={[Function]}
+            placeholder="Age"
+            type="number"
+            value={21}
+/>,
+          <button
+            className="border-2 border-black px-6 py-3 w-full sm:w-auto"
+            type="submit"
+>
+            Search
+</button>,
+        ],
+        "className": "my-4 text-xs sm:flex sm:justify-between",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4",
+            "name": "playerName",
+            "onChange": [Function],
+            "placeholder": "Player Name",
+            "type": "text",
+            "value": "Test name",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                value=""
+>
+                Position
+</option>,
+              Array [
+                <option
+                  value="Attacking Midfield"
+>
+                  Attacking Midfield
+</option>,
+                <option
+                  value="Central Midfield"
+>
+                  Central Midfield
+</option>,
+                <option
+                  value="Centre-Back"
+>
+                  Centre-Back
+</option>,
+                <option
+                  value="Centre-Forward"
+>
+                  Centre-Forward
+</option>,
+                <option
+                  value="Defensive Midfield"
+>
+                  Defensive Midfield
+</option>,
+                <option
+                  value="Keeper"
+>
+                  Keeper
+</option>,
+                <option
+                  value="Left Midfield"
+>
+                  Left Midfield
+</option>,
+                <option
+                  value="Left Wing"
+>
+                  Left Wing
+</option>,
+                <option
+                  value="Left-Back"
+>
+                  Left-Back
+</option>,
+                <option
+                  value="Right-Back"
+>
+                  Right-Back
+</option>,
+              ],
+            ],
+            "className": "border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4 bg-white",
+            "name": "playerPosition",
+            "onChange": [Function],
+            "placeholder": "Position",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Position",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": "Position",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "Attacking Midfield",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Attacking Midfield",
+                "value": "Attacking Midfield",
+              },
+              "ref": null,
+              "rendered": "Attacking Midfield",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "Central Midfield",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Central Midfield",
+                "value": "Central Midfield",
+              },
+              "ref": null,
+              "rendered": "Central Midfield",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "Centre-Back",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Centre-Back",
+                "value": "Centre-Back",
+              },
+              "ref": null,
+              "rendered": "Centre-Back",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "Centre-Forward",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Centre-Forward",
+                "value": "Centre-Forward",
+              },
+              "ref": null,
+              "rendered": "Centre-Forward",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "Defensive Midfield",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Defensive Midfield",
+                "value": "Defensive Midfield",
+              },
+              "ref": null,
+              "rendered": "Defensive Midfield",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "Keeper",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Keeper",
+                "value": "Keeper",
+              },
+              "ref": null,
+              "rendered": "Keeper",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "Left Midfield",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Left Midfield",
+                "value": "Left Midfield",
+              },
+              "ref": null,
+              "rendered": "Left Midfield",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "Left Wing",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Left Wing",
+                "value": "Left Wing",
+              },
+              "ref": null,
+              "rendered": "Left Wing",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "Left-Back",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Left-Back",
+                "value": "Left-Back",
+              },
+              "ref": null,
+              "rendered": "Left-Back",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "Right-Back",
+              "nodeType": "host",
+              "props": Object {
+                "children": "Right-Back",
+                "value": "Right-Back",
+              },
+              "ref": null,
+              "rendered": "Right-Back",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "border-2 border-black p-2 my-1 sm:my-0 w-full sm:w-1/4",
+            "max": "40",
+            "min": "18",
+            "name": "playerAge",
+            "onChange": [Function],
+            "placeholder": "Age",
+            "type": "number",
+            "value": 21,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Search",
+            "className": "border-2 border-black px-6 py-3 w-full sm:w-auto",
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "Search",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

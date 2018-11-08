@@ -5,7 +5,11 @@ import Filters from './Filters';
 import { applyFilters } from '../../actions/filters';
 
 const mapStateToProps = ({
-  footballPlayers: { nameFilter, ageFilter, positionFilter }
+  footballPlayers: {
+    nameFilter,
+    ageFilter,
+    positionFilter
+  }
 }) => ({
   nameFilter,
   ageFilter,
@@ -19,7 +23,7 @@ const mapDispatchToProps = (dispatch, { name, position, age }) => ({
   }
 });
 
-export default compose(
+export const enhance = compose(
   withState('name', 'setName', ''),
   withState('position', 'setPosition', ''),
   withState('age', 'setAge', ''),
@@ -32,4 +36,6 @@ export default compose(
       setAge(event.target.value)
   }),
   connect(mapStateToProps, mapDispatchToProps)
-)(Filters);
+);
+
+export default enhance(Filters);
