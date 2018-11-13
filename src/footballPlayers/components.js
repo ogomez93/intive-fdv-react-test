@@ -1,3 +1,3 @@
-import FootballPlayersWrapper from './components/FootballPlayersWrapper';
+import FootballPlayers from './components/Main';
 
-export { FootballPlayersWrapper }
+export { FootballPlayers }
