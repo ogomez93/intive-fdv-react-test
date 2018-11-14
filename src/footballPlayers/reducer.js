@@ -4,6 +4,9 @@ import {
   SET_PLAYERS,
 } from './actionTypes';
 
+// ToDo: initialState should be imported from its own JSON file
+// import initialState from 'initialState/directory';
+
 const initialState = {
   fetching: true,
   players: [],

@@ -45,54 +45,14 @@ ShallowWrapper {
                     Position
           </option>
           <option
-                    value="Attacking Midfield"
+                    value="position 1"
           >
-                    Attacking Midfield
+                    position 1
           </option>
           <option
-                    value="Central Midfield"
+                    value="position 2"
           >
-                    Central Midfield
-          </option>
-          <option
-                    value="Centre-Back"
-          >
-                    Centre-Back
-          </option>
-          <option
-                    value="Centre-Forward"
-          >
-                    Centre-Forward
-          </option>
-          <option
-                    value="Defensive Midfield"
-          >
-                    Defensive Midfield
-          </option>
-          <option
-                    value="Keeper"
-          >
-                    Keeper
-          </option>
-          <option
-                    value="Left Midfield"
-          >
-                    Left Midfield
-          </option>
-          <option
-                    value="Left Wing"
-          >
-                    Left Wing
-          </option>
-          <option
-                    value="Left-Back"
-          >
-                    Left-Back
-          </option>
-          <option
-                    value="Right-Back"
-          >
-                    Right-Back
+                    position 2
           </option>
 </select>,
         <input
@@ -146,54 +106,14 @@ ShallowWrapper {
 </option>,
             Array [
               <option
-                value="Attacking Midfield"
+                value="position 1"
 >
-                Attacking Midfield
+                position 1
 </option>,
               <option
-                value="Central Midfield"
+                value="position 2"
 >
-                Central Midfield
-</option>,
-              <option
-                value="Centre-Back"
->
-                Centre-Back
-</option>,
-              <option
-                value="Centre-Forward"
->
-                Centre-Forward
-</option>,
-              <option
-                value="Defensive Midfield"
->
-                Defensive Midfield
-</option>,
-              <option
-                value="Keeper"
->
-                Keeper
-</option>,
-              <option
-                value="Left Midfield"
->
-                Left Midfield
-</option>,
-              <option
-                value="Left Wing"
->
-                Left Wing
-</option>,
-              <option
-                value="Left-Back"
->
-                Left-Back
-</option>,
-              <option
-                value="Right-Back"
->
-                Right-Back
+                position 2
 </option>,
             ],
           ],
@@ -218,122 +138,26 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": "Attacking Midfield",
+            "key": "position 1",
             "nodeType": "host",
             "props": Object {
-              "children": "Attacking Midfield",
-              "value": "Attacking Midfield",
+              "children": "position 1",
+              "value": "position 1",
             },
             "ref": null,
-            "rendered": "Attacking Midfield",
+            "rendered": "position 1",
             "type": "option",
           },
           Object {
             "instance": null,
-            "key": "Central Midfield",
+            "key": "position 2",
             "nodeType": "host",
             "props": Object {
-              "children": "Central Midfield",
-              "value": "Central Midfield",
+              "children": "position 2",
+              "value": "position 2",
             },
             "ref": null,
-            "rendered": "Central Midfield",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "Centre-Back",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Centre-Back",
-              "value": "Centre-Back",
-            },
-            "ref": null,
-            "rendered": "Centre-Back",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "Centre-Forward",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Centre-Forward",
-              "value": "Centre-Forward",
-            },
-            "ref": null,
-            "rendered": "Centre-Forward",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "Defensive Midfield",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Defensive Midfield",
-              "value": "Defensive Midfield",
-            },
-            "ref": null,
-            "rendered": "Defensive Midfield",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "Keeper",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Keeper",
-              "value": "Keeper",
-            },
-            "ref": null,
-            "rendered": "Keeper",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "Left Midfield",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Left Midfield",
-              "value": "Left Midfield",
-            },
-            "ref": null,
-            "rendered": "Left Midfield",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "Left Wing",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Left Wing",
-              "value": "Left Wing",
-            },
-            "ref": null,
-            "rendered": "Left Wing",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "Left-Back",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Left-Back",
-              "value": "Left-Back",
-            },
-            "ref": null,
-            "rendered": "Left-Back",
-            "type": "option",
-          },
-          Object {
-            "instance": null,
-            "key": "Right-Back",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Right-Back",
-              "value": "Right-Back",
-            },
-            "ref": null,
-            "rendered": "Right-Back",
+            "rendered": "position 2",
             "type": "option",
           },
         ],
@@ -400,54 +224,14 @@ ShallowWrapper {
                         Position
             </option>
             <option
-                        value="Attacking Midfield"
+                        value="position 1"
             >
-                        Attacking Midfield
+                        position 1
             </option>
             <option
-                        value="Central Midfield"
+                        value="position 2"
             >
-                        Central Midfield
-            </option>
-            <option
-                        value="Centre-Back"
-            >
-                        Centre-Back
-            </option>
-            <option
-                        value="Centre-Forward"
-            >
-                        Centre-Forward
-            </option>
-            <option
-                        value="Defensive Midfield"
-            >
-                        Defensive Midfield
-            </option>
-            <option
-                        value="Keeper"
-            >
-                        Keeper
-            </option>
-            <option
-                        value="Left Midfield"
-            >
-                        Left Midfield
-            </option>
-            <option
-                        value="Left Wing"
-            >
-                        Left Wing
-            </option>
-            <option
-                        value="Left-Back"
-            >
-                        Left-Back
-            </option>
-            <option
-                        value="Right-Back"
-            >
-                        Right-Back
+                        position 2
             </option>
 </select>,
           <input
@@ -501,54 +285,14 @@ ShallowWrapper {
 </option>,
               Array [
                 <option
-                  value="Attacking Midfield"
+                  value="position 1"
 >
-                  Attacking Midfield
+                  position 1
 </option>,
                 <option
-                  value="Central Midfield"
+                  value="position 2"
 >
-                  Central Midfield
-</option>,
-                <option
-                  value="Centre-Back"
->
-                  Centre-Back
-</option>,
-                <option
-                  value="Centre-Forward"
->
-                  Centre-Forward
-</option>,
-                <option
-                  value="Defensive Midfield"
->
-                  Defensive Midfield
-</option>,
-                <option
-                  value="Keeper"
->
-                  Keeper
-</option>,
-                <option
-                  value="Left Midfield"
->
-                  Left Midfield
-</option>,
-                <option
-                  value="Left Wing"
->
-                  Left Wing
-</option>,
-                <option
-                  value="Left-Back"
->
-                  Left-Back
-</option>,
-                <option
-                  value="Right-Back"
->
-                  Right-Back
+                  position 2
 </option>,
               ],
             ],
@@ -573,122 +317,26 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": "Attacking Midfield",
+              "key": "position 1",
               "nodeType": "host",
               "props": Object {
-                "children": "Attacking Midfield",
-                "value": "Attacking Midfield",
+                "children": "position 1",
+                "value": "position 1",
               },
               "ref": null,
-              "rendered": "Attacking Midfield",
+              "rendered": "position 1",
               "type": "option",
             },
             Object {
               "instance": null,
-              "key": "Central Midfield",
+              "key": "position 2",
               "nodeType": "host",
               "props": Object {
-                "children": "Central Midfield",
-                "value": "Central Midfield",
+                "children": "position 2",
+                "value": "position 2",
               },
               "ref": null,
-              "rendered": "Central Midfield",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "Centre-Back",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Centre-Back",
-                "value": "Centre-Back",
-              },
-              "ref": null,
-              "rendered": "Centre-Back",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "Centre-Forward",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Centre-Forward",
-                "value": "Centre-Forward",
-              },
-              "ref": null,
-              "rendered": "Centre-Forward",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "Defensive Midfield",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Defensive Midfield",
-                "value": "Defensive Midfield",
-              },
-              "ref": null,
-              "rendered": "Defensive Midfield",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "Keeper",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Keeper",
-                "value": "Keeper",
-              },
-              "ref": null,
-              "rendered": "Keeper",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "Left Midfield",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Left Midfield",
-                "value": "Left Midfield",
-              },
-              "ref": null,
-              "rendered": "Left Midfield",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "Left Wing",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Left Wing",
-                "value": "Left Wing",
-              },
-              "ref": null,
-              "rendered": "Left Wing",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "Left-Back",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Left-Back",
-                "value": "Left-Back",
-              },
-              "ref": null,
-              "rendered": "Left-Back",
-              "type": "option",
-            },
-            Object {
-              "instance": null,
-              "key": "Right-Back",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Right-Back",
-                "value": "Right-Back",
-              },
-              "ref": null,
-              "rendered": "Right-Back",
+              "rendered": "position 2",
               "type": "option",
             },
           ],
