@@ -7,18 +7,24 @@ jest.mock('../../actionTypes', () => ({
 
 describe('Actions > Players', () => {
   describe('errorFetchingPlayers', () => {
-    it('should return the proper action', () => {
+    let error;
+
+    beforeAll(() => {
+      error = { code: 500, message: 'server error' };
+    });
+
+    it('should return the proper action', () =>
       expect(
-        errorFetchingPlayers()
+        errorFetchingPlayers(error)
       ).toEqual(
         {
           type: 'ERROR_FETCHING',
           payload: {
-            fetching: false
+            fetching: false,
+            error: { code: 500, message: 'server error' }
           }
         }
-      );
-    });
+      ));
   });
 
   describe('setFootballPlayers', () => {
@@ -31,7 +37,7 @@ describe('Actions > Players', () => {
       ]
     });
 
-    it('should return the proper action', () => {
+    it('should return the proper action', () =>
       expect(
         setFootballPlayers(players)
       ).toEqual(
@@ -45,7 +51,6 @@ describe('Actions > Players', () => {
             ]
           }
         }
-      );
-    });
+      ));
   });
 });

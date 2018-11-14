@@ -29,10 +29,10 @@ describe('Table container', () => {
     });
     
     it('should render the Loader component', () => 
-    expect(wrapper.find('Loader').length).toEqual(1));
+      expect(wrapper.find('Loader').length).toEqual(1));
     
     it('should not render the Table component', () => 
-    expect(wrapper.find('Table').length).toEqual(0));
+      expect(wrapper.find('Table').length).toEqual(0));
   });
   
   describe('when the app is not fetching players', () => {

@@ -24,14 +24,12 @@ describe('VisiblePlayersList container', () => {
       noPlayersComponent = wrapper.find('NoPlayers');
     });
 
-    it('should render a NoPlayers component', () => {
-      expect(noPlayersComponent.isEmptyRender()).toEqual(false);
-    });
+    it('should render a NoPlayers component', () =>
+      expect(noPlayersComponent.isEmptyRender()).toEqual(false));
     
     describe('players prop', () => {
-      it('should be an empty array', () => {
-        expect(noPlayersComponent.prop('players')).toEqual([]);
-      });
+      it('should be an empty array', () =>
+        expect(noPlayersComponent.prop('players')).toEqual([]));
     });
   });
 
@@ -44,14 +42,12 @@ describe('VisiblePlayersList container', () => {
       visiblePlayersListComponent = wrapper.find('VisiblePlayersList');
     });
 
-    it('should render a VisiblePlayersList component', () => {
-      expect(visiblePlayersListComponent.isEmptyRender()).toEqual(false);
-    });
+    it('should render a VisiblePlayersList component', () =>
+      expect(visiblePlayersListComponent.isEmptyRender()).toEqual(false));
     
     describe('players prop', () => {
-      it('should be an array of players', () => {
-        expect(visiblePlayersListComponent.prop('players')).toEqual(props.players);
-      });
+      it('should be an array of players', () =>
+        expect(visiblePlayersListComponent.prop('players')).toEqual(props.players));
     });
   });
 });

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Global FootballPlayers constants NAME should match the snapshot 1`] = `"footballPlayers"`;
+
+exports[`Global FootballPlayers constants PLAYERS_API should match the snapshot 1`] = `"https://football-players-b31f2.firebaseio.com/players.json?print=pretty"`;
+
+exports[`Global FootballPlayers constants POSITIONS should match the snapshot 1`] = `
+Array [
+  "Attacking Midfield",
+  "Central Midfield",
+  "Centre-Back",
+  "Centre-Forward",
+  "Defensive Midfield",
+  "Keeper",
+  "Left Midfield",
+  "Left Wing",
+  "Left-Back",
+  "Right-Back",
+]
+`;

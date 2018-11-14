@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 import thunk from 'redux-thunk';
+
+import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './rootReducer';
 import { setFootballPlayers, errorFetchingPlayers } from './footballPlayers/actions/players';
 import { PLAYERS_API } from './footballPlayers/constants';
+
+import App from './App';
+import './index.css';
 
 export const store = createStore(
   rootReducer,
@@ -16,18 +18,13 @@ export const store = createStore(
   applyMiddleware(thunk)
 );
 
-function fetchFootballPlayers() {
-  return fetch(PLAYERS_API);
-}
+const fetchFootballPlayers = () => fetch(PLAYERS_API);
 
-function getFootballPlayers() {
-  return dispatch => {
-    return fetchFootballPlayers()
-      .then(res => res.json())
-      .then(res => dispatch(setFootballPlayers(res)))
-      .catch(error => dispatch(errorFetchingPlayers()));
-  };
-}
+const getFootballPlayers = () => dispatch =>
+  fetchFootballPlayers()
+    .then(res => res.json())
+    .then(res => dispatch(setFootballPlayers(res)))
+    .catch(error => dispatch(errorFetchingPlayers(error)));
 
 store.dispatch(
   getFootballPlayers()

@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import { compose, withState, withHandlers } from 'recompose';
 
 import Filters from './Filters';
+import { onAgeChange, onNameChange, onPositionChange } from './utils/handlers';
 import { applyFilters } from '../../actions/filters';
 
 const mapStateToProps = ({
@@ -28,12 +29,9 @@ export const enhance = compose(
   withState('position', 'setPosition', ''),
   withState('age', 'setAge', ''),
   withHandlers({
-    onNameChange: ({ setName }) => event =>
-      setName(event.target.value),
-    onPositionChange: ({ setPosition }) => event =>
-      setPosition(event.target.value),
-    onAgeChange: ({ setAge }) => event =>
-      setAge(event.target.value)
+    onNameChange,
+    onPositionChange,
+    onAgeChange
   }),
   connect(mapStateToProps, mapDispatchToProps)
 );

@@ -1,9 +1,12 @@
 import { ERROR_FETCHING, SET_PLAYERS } from '../../actionTypes';
 
-export const errorFetchingPlayers = () => ({
+const unknownError = { code: 500, message: 'Unknown server error' };
+
+export const errorFetchingPlayers = (error = unknownError) => ({
   type: ERROR_FETCHING,
   payload: {
-    fetching: false
+    fetching: false,
+    error
   }
 });
 

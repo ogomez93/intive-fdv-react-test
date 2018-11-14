@@ -10,9 +10,8 @@ describe('calculateAge', () => {
   });
 
   describe('when dateOfBirth is not a string', () => {
-    it('should return "Invalid date"', () => {
-      expect(calculateAge(123)).toEqual('Invalid date');
-    });
+    it('should return "Invalid date"', () =>
+      expect(calculateAge(123)).toEqual('Invalid date'));
   });
 
   describe('for someone born on January 1st eightteen years ago', () => {
@@ -20,9 +19,8 @@ describe('calculateAge', () => {
       dateOfBirth = `${presentYear - 18}-01-01`;
     });
 
-    it('should return 18', () => {
-      expect(calculateAge(dateOfBirth)).toEqual(18);
-    });
+    it('should return 18', () =>
+      expect(calculateAge(dateOfBirth)).toEqual(18));
   });
 
   describe('for someone born on January 1st twentytwo years ago', () => {
@@ -30,8 +28,7 @@ describe('calculateAge', () => {
       dateOfBirth = `${presentYear - 22}-01-01`;
     });
 
-    it('should return 18', () => {
-      expect(calculateAge(dateOfBirth)).toEqual(22);
-    });
+    it('should return 18', () =>
+      expect(calculateAge(dateOfBirth)).toEqual(22));
   });
 });

@@ -14,7 +14,7 @@ describe('Actions > Filters', () => {
       position = 'position';
     });
 
-    it('should return the proper action', () => {
+    it('should return the proper action', () =>
       expect(
         applyFilters({ age, name, position })
       ).toEqual(
@@ -26,7 +26,6 @@ describe('Actions > Filters', () => {
             positionFilter: position
           }
         }
-      );
-    });
+      ));
   });
 });

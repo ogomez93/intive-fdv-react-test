@@ -12,10 +12,12 @@ describe('Component: <Player />', () => {
   beforeAll(() => {
     wrapper = shallow(<Player {...props} />);
   });
+
+  it('should render', () =>
+    expect(wrapper.isEmptyRender()).toEqual(false));
   
-  it('should render', () => {
-    expect(wrapper).toMatchSnapshot();
-  });
+  it('should render correctly', () =>
+    expect(wrapper).toMatchSnapshot());
 
   describe('Player props', () => {
     describe('Name', () => {
@@ -25,9 +27,8 @@ describe('Component: <Player />', () => {
         nameTd = wrapper.find('[label="Name"]');
       });
 
-      it('should contain the mocked name', () => {
-        expect(nameTd.text()).toEqual('mocked name');
-      });
+      it('should contain the mocked name', () =>
+        expect(nameTd.text()).toEqual('mocked name'));
     });
 
     describe('Position', () => {
@@ -37,9 +38,8 @@ describe('Component: <Player />', () => {
         positionTd = wrapper.find('[label="Position"]');
       });
 
-      it('should contain the mocked position', () => {
-        expect(positionTd.text()).toEqual('mocked position');
-      });
+      it('should contain the mocked position', () =>
+        expect(positionTd.text()).toEqual('mocked position'));
     });
 
     describe('Nationality', () => {
@@ -49,9 +49,8 @@ describe('Component: <Player />', () => {
         nationalityTd = wrapper.find('[label="Nationality"]');
       });
 
-      it('should contain the mocked nationality', () => {
-        expect(nationalityTd.text()).toEqual('mocked nationality');
-      });
+      it('should contain the mocked nationality', () =>
+        expect(nationalityTd.text()).toEqual('mocked nationality'));
     });
 
     describe('Age', () => {
@@ -61,9 +60,8 @@ describe('Component: <Player />', () => {
         ageTd = wrapper.find('[label="Age"]');
       });
 
-      it('should contain the mocked age', () => {
-        expect(ageTd.text()).toEqual('mocked age');
-      });
+      it('should contain the mocked age', () =>
+        expect(ageTd.text()).toEqual('mocked age'));
     });
   });
 });

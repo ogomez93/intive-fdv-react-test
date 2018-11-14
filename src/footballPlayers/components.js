@@ -1,3 +1,1 @@
-import FootballPlayers from './components/Main';
-
-export { FootballPlayers }
+export { default as FootballPlayers } from './components/Main';

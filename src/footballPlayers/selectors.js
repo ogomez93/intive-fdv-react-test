@@ -7,7 +7,12 @@ const getAgeFilter = (state) => state.footballPlayers.ageFilter;
 const getAllPlayers = (state) => state.footballPlayers.players;
 
 export const getVisiblePlayers = createSelector(
-  [ getNameFilter, getPositionFilter, getAgeFilter, getAllPlayers ],
+  [
+    getNameFilter,
+    getPositionFilter,
+    getAgeFilter,
+    getAllPlayers
+  ],
   (nameFilter, positionFilter, ageFilter, players) => {
     let filteredPlayers = players;
     if (nameFilter !== '') {

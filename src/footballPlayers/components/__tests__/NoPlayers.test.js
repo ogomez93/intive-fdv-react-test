@@ -9,15 +9,12 @@ describe('NoPlayers', () => {
     wrapper = shallow(<NoPlayers />);
   });
   
-  it('should render', () => {
-    expect(wrapper.isEmptyRender()).toEqual(false);
-  });
+  it('should render', () =>
+    expect(wrapper.isEmptyRender()).toEqual(false));
 
-  it('should render correctly', () => {
-    expect(wrapper).toMatchSnapshot();
-  });
+  it('should render correctly', () =>
+    expect(wrapper).toMatchSnapshot());
 
-  it('should render a text shows that no players match the filters', () => {
-    expect(wrapper.text()).toEqual('No players match those filters');
-  });
+  it('should render a text shows that no players match the filters', () =>
+    expect(wrapper.text()).toEqual('No players match those filters'));
 });
