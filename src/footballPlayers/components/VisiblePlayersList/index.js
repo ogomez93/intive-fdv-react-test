@@ -4,14 +4,11 @@ import VisiblePlayersList from './VisiblePlayersList';
 import NoPlayers from '../NoPlayers';
 import { getVisiblePlayers } from '../../selectors';
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   players: getVisiblePlayers(state)
 });
 
 export default compose(
   connect(mapStateToProps),
-  branch(
-    ({ players }) => players.length === 0,
-    renderComponent(NoPlayers)
-  )
+  branch(({ players }) => players.length === 0, renderComponent(NoPlayers))
 )(VisiblePlayersList);
