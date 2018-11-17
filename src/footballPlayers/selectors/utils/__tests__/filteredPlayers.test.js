@@ -100,7 +100,7 @@ describe('FootballPlayers / selectors / utils / filteredPlayers', () => {
       it('should return the players that match the filters', () =>
         expect(
           filteredPlayers(mockedPlayers, ageFilter, nameFilter, positionFilter)
-        ).toEqual(mockedPlayers[0]));
+        ).toEqual([mockedPlayers[0]]));
     });
 
     describe('when no players match the filters', () => {

@@ -12,5 +12,5 @@ import filteredPlayers from './utils/filteredPlayers';
 export const getVisiblePlayers = createSelector(
   [getAllPlayers, getAgeFilter, getNameFilter, getPositionFilter],
   (players, ageFilter, nameFilter, positionFilter) =>
-    filteredPlayers((players, ageFilter, nameFilter, positionFilter))
+    filteredPlayers(players, ageFilter, nameFilter, positionFilter)
 );

@@ -6,7 +6,7 @@ import {
 } from '../selectors';
 
 const withoutFootballPlayers = {};
-const emptyFootballPlayers = { footballplayers: {} };
+const emptyFootballPlayers = { footballPlayers: {} };
 const players = [{ name: 'player 1' }, { name: 'player 2' }];
 const ageFilter = 'ageFilter';
 const nameFilter = 'nameFilter';
@@ -16,7 +16,7 @@ describe('FootballPlayers selectors', () => {
   let state;
 
   describe('getAllPlayers', () => {
-    beforeAll(() => (state = { footballplayers: { players } }));
+    beforeAll(() => (state = { footballPlayers: { players } }));
 
     describe('when it is called without a state', () => {
       it('should return an empty array', () =>
@@ -40,7 +40,7 @@ describe('FootballPlayers selectors', () => {
   });
 
   describe('getAgeFilter', () => {
-    beforeAll(() => (state = { footballplayers: { ageFilter } }));
+    beforeAll(() => (state = { footballPlayers: { ageFilter } }));
 
     describe('when it is called without a state', () => {
       it('should return an empty string', () =>
@@ -64,7 +64,7 @@ describe('FootballPlayers selectors', () => {
   });
 
   describe('getNameFilter', () => {
-    beforeAll(() => (state = { footballplayers: { nameFilter } }));
+    beforeAll(() => (state = { footballPlayers: { nameFilter } }));
 
     describe('when it is called without a state', () => {
       it('should return an empty string', () =>
@@ -88,7 +88,7 @@ describe('FootballPlayers selectors', () => {
   });
 
   describe('getPositionFilter', () => {
-    beforeAll(() => (state = { footballplayers: { positionFilter } }));
+    beforeAll(() => (state = { footballPlayers: { positionFilter } }));
 
     describe('when it is called without a state', () => {
       it('should return an empty string', () =>
