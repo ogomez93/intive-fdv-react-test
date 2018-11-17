@@ -1,7 +1,7 @@
 import calculateAge from '../../utils/calculateAge';
 
 export const ageMatchesFilter = (dateOfBirth = '', ageFilter = '') =>
-  ageFilter === '' ? true : calculateAge(dateOfBirth) === parseInt(ageFilter);
+  ageFilter === '' ? true : calculateAge(dateOfBirth) === parseInt(ageFilter, 10);
 
 export const nameMatchesFilter = (name = '', nameFilter = '') =>
   name.toLowerCase().includes(nameFilter.toLowerCase().trim());

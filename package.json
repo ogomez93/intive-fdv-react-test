@@ -1,4 +1,5 @@
 {
+  "homepage": "http://ogomez93.github.io/intive-fdv-react-test",
   "name": "react-test-oswaldo",
   "version": "0.1.0",
   "private": true,
@@ -19,12 +20,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --modulePaths=src",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
+    "gh-pages": "^2.0.1",
     "react-test-renderer": "^16.4.1",
     "redux-mock-store": "^1.5.3",
     "tailwindcss": "^0.6.4"
