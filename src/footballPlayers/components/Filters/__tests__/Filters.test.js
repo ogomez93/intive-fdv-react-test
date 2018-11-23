@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import Filters from '../Filters';
 
-jest.mock('../../../constants', () => ({
+jest.mock('footballPlayers/constants', () => ({
   POSITIONS: ['position 1', 'position 2']
 }));
 

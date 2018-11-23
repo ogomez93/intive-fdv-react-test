@@ -4,7 +4,7 @@ import filteredPlayers, {
   positionMatchesFilter
 } from '../filteredPlayers';
 
-jest.mock('../../../utils/calculateAge', () => jest.fn(age => age));
+jest.mock('footballPlayers/utils/calculateAge', () => jest.fn(age => age));
 
 const mockedAge = 25;
 const mockedName = 'test player name';

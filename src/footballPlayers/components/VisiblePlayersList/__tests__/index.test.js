@@ -8,7 +8,7 @@ import props from './fixtures/players';
 
 const mockStore = configureMockStore();
 
-jest.mock('../../../selectors', () => ({
+jest.mock('footballPlayers/selectors', () => ({
   getVisiblePlayers: (state) => state.players
 }));
 

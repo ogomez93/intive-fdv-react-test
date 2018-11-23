@@ -1,4 +1,4 @@
-import calculateAge from '../../utils/calculateAge';
+import calculateAge from 'footballPlayers/utils/calculateAge';
 
 export const ageMatchesFilter = (dateOfBirth = '', ageFilter = '') =>
   ageFilter === '' ? true : calculateAge(dateOfBirth) === parseInt(ageFilter, 10);

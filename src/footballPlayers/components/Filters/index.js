@@ -3,7 +3,7 @@ import { compose, withState, withHandlers } from 'recompose';
 
 import Filters from './Filters';
 import { onAgeChange, onNameChange, onPositionChange } from './utils/handlers';
-import { applyFilters } from '../../actions/filters';
+import { applyFilters } from 'footballPlayers/actions/filters';
 
 const mapStateToProps = ({
   footballPlayers: {

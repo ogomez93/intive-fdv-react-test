@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import { branch, compose, renderComponent } from 'recompose';
 import VisiblePlayersList from './VisiblePlayersList';
-import NoPlayers from '../NoPlayers';
-import { getVisiblePlayers } from '../../selectors';
+import NoPlayers from 'footballPlayers/components/NoPlayers';
+import { getVisiblePlayers } from 'footballPlayers/selectors';
 
 const mapStateToProps = state => ({
   players: getVisiblePlayers(state)

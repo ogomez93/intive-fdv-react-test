@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import Table from '../Table';
 
-jest.mock('../../VisiblePlayersList', () => 'VisiblePlayersList');
+jest.mock('footballPlayers/components/VisiblePlayersList', () => 'VisiblePlayersList');
 
 describe('Component: <Table />', () => {
   let wrapper;

@@ -1,4 +1,4 @@
-import { ERROR_FETCHING, SET_PLAYERS } from '../../actionTypes';
+import { ERROR_FETCHING, SET_PLAYERS } from 'footballPlayers/actionTypes';
 
 const unknownError = { code: 500, message: 'Unknown server error' };
 

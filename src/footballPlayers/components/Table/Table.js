@@ -1,6 +1,6 @@
 import React from 'react';
-import VisiblePlayersList from '../VisiblePlayersList';
-import '../css/table.css';
+import VisiblePlayersList from 'footballPlayers/components/VisiblePlayersList';
+import './table.css';
 
 const Table = () => (
   <table id="playersTable" className="custom-table w-full text-center text-xs border">

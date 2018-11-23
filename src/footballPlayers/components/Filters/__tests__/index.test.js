@@ -6,7 +6,7 @@ import configureStore from 'redux-mock-store';
 import FiltersContainer from '../index';
 import initialState from './fixtures/initialState';
 
-jest.mock('../../../actions/filters', () => ({
+jest.mock('footballPlayers/actions/filters', () => ({
   applyFilters: () => 'applyFilters'
 }));
 

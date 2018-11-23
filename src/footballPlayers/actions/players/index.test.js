@@ -1,6 +1,6 @@
 import { errorFetchingPlayers, setFootballPlayers } from './index';
 
-jest.mock('../../actionTypes', () => ({
+jest.mock('footballPlayers/actionTypes', () => ({
   ERROR_FETCHING: 'ERROR_FETCHING',
   SET_PLAYERS: 'SET_PLAYERS'
 }));

@@ -5,7 +5,7 @@ import VisiblePlayersList from '../VisiblePlayersList';
 
 import props from './fixtures/players';
 
-jest.mock('../../Player', () => 'Player');
+jest.mock('footballPlayers/components/Player', () => 'Player');
 
 describe('VisiblePlayersList', () => {
   let wrapper;

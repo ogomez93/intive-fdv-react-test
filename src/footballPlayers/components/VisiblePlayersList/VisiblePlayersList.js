@@ -1,5 +1,5 @@
 import React from 'react';
-import Player from '../Player';
+import Player from 'footballPlayers/components/Player';
 
 const VisiblePlayersList = ({ players }) => (
   <tbody>

@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import Player from '../Player';
 import props from './fixtures/playerProps';
 
-jest.mock('../../../utils/calculateAge', () => jest.fn(() => 'mocked age'));
+jest.mock('footballPlayers/utils/calculateAge', () => jest.fn(() => 'mocked age'));
 
 describe('Component: <Player />', () => {
   let wrapper;

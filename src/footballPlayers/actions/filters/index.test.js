@@ -1,6 +1,6 @@
 import { applyFilters } from './index';
 
-jest.mock('../../actionTypes', () => ({
+jest.mock('footballPlayers/actionTypes', () => ({
   APPLY_FILTERS: 'APPLY_FILTERS'
 }));
 

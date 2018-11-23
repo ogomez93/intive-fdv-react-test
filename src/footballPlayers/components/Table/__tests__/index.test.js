@@ -6,7 +6,7 @@ import configureStore from 'redux-mock-store';
 import TableContainer from '../index';
 
 jest.mock('../Table', () => 'Table');
-jest.mock('../../Loader', () => 'Loader');
+jest.mock('footballPlayers/components/Loader', () => 'Loader');
 
 const mockStore = configureStore();
 

@@ -33,6 +33,6 @@ const footballPlayers = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
 export default footballPlayers;

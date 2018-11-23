@@ -17,8 +17,8 @@
   },
   "scripts": {
     "tailwind:css": "tailwind build src/css/tailwind.src.css -c  tailwind.js -o src/css/tailwind.css",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run tailwind:css && react-scripts start",
+    "build": "npm run tailwind:css && react-scripts build",
     "test": "react-scripts test --env=jsdom --modulePaths=src",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

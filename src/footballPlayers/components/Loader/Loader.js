@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/loader.css';
+import './loader.css';
 
 const Loader = () => (
 	<div id="fetchingPlayers" className="text-center">

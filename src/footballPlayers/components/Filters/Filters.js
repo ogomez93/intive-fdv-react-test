@@ -1,5 +1,5 @@
 import React from 'react';
-import { POSITIONS } from '../../constants';
+import { POSITIONS } from 'footballPlayers/constants';
 
 const positions = POSITIONS.map(position =>
   <option value={ position } key={ position }>

@@ -1,5 +1,5 @@
 import React from 'react';
-import calculateAge from '../../utils/calculateAge';
+import calculateAge from 'footballPlayers/utils/calculateAge';
 
 const Player = ({ dateOfBirth, name, nationality, position }) => (
   <tr>

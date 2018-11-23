@@ -11,6 +11,7 @@ import { PLAYERS_API } from './footballPlayers/constants';
 
 import App from './App';
 import './index.css';
+import './css/tailwind.css';
 
 export const store = createStore(
   rootReducer,
