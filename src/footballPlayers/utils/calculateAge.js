@@ -7,6 +7,6 @@ const calculateAge = (dob) => {
   const timeDiff = Math.abs(today.getTime() - date.getTime());
   const age = Math.ceil(timeDiff / (1000 * 3600 * 24 * 365)) - 1;
   return age;
-}
+};
 
 export default calculateAge;
